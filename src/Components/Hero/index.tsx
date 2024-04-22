@@ -3,7 +3,7 @@ import React from "react";
 const Hero: React.FC = () => {
   return (
     <section className="animate-fadeInDown">
-      <nav className="container mx-auto flex">
+      <nav className="container mx-auto flex justify-center">
         <div>
           <h1 className="text-[72px] mb-8 text-left text-[#270017] font-medium  max-w-[1000px]">
             BLOCKCHAIN ft. AI WITHOUT
@@ -18,12 +18,16 @@ const Hero: React.FC = () => {
             <button className="bg-[#EC008C] text-[20px] rounded px-6 py-4 text-white  w-40 h-14">
               Get Started
             </button>
-            <button className="bg-[#FFF] border border-solid border-gray-300   font-medium text-[20px] rounded px-6 py-4 text-[#684A5D]  w-40 h-14">
-              Get Started
+            <button className="bg-[#FFF] border border-solid border-gray-300 font-medium text-[20px] rounded px-6 py-4 text-[#684A5D]  w-40 h-14">
+              Read Docs
             </button>
           </div>
         </div>
-        <div className="bg-hero"></div>
+        <div className="bg-hero1">
+          <video autoPlay muted loop className="w-full h-full object-cover">
+            <source src="../Img/video.mp4" type="video/mp4" />
+          </video>
+        </div>
       </nav>
     </section>
   );

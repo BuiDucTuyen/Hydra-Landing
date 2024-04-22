@@ -13,17 +13,17 @@ const Logo = () => {
           <div className="flex  gap-10 p-4 mb-16 overflow-x-hidden select-none">
             <div className="marquee-container flex flex-row gap-20">
               <ul className="flex flex-row min-w-full run flex-shrink-0 content-around items-center gap-32 md:animate-marqueeScroll">
+                {renderLogo("Armory", "../Img/egabid (1).png", 220, 64)}
+                {renderLogo("Armory", "../Img/pindias.png", 220, 64)}
                 {renderLogo("Armory", "../Img/hyratek.png", 220, 64)}
-                {renderLogo("Armory", "../Img/hyratek.png", 220, 64)}
-                {renderLogo("Armory", "../Img/hyratek.png", 220, 64)}
-                {renderLogo("Armory", "../Img/hyratek.png", 220, 64)}
+                {renderLogo("Armory", "../Img/pindias.png", 220, 64)}
                 {renderLogo("Armory", "../Img/hyratek.png", 220, 64)}
               </ul>
               <ul className="flex flex-row min-w-full run flex-shrink-0 content-around items-center gap-32 md:animate-marqueeScroll">
+                {renderLogo("Armory", "../Img/egabid (1).png", 220, 64)}
+                {renderLogo("Armory", "../Img/pindias.png", 220, 64)}
                 {renderLogo("Armory", "../Img/hyratek.png", 220, 64)}
-                {renderLogo("Armory", "../Img/hyratek.png", 220, 64)}
-                {renderLogo("Armory", "../Img/hyratek.png", 220, 64)}
-                {renderLogo("Armory", "../Img/hyratek.png", 220, 64)}
+                {renderLogo("Armory", "../Img/egabid (1).png", 220, 64)}
                 {renderLogo("Armory", "../Img/hyratek.png", 220, 64)}
               </ul>
             </div>

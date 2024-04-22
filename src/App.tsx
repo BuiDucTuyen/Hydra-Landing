@@ -13,6 +13,7 @@ import Backer from "./Components/Backer";
 import Team from "./Components/Team";
 import Tokennomic from "./Components/Tokenomic";
 import Frame from "./Components/Frame";
+import Roadmap from "./Components/Roadmap";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Backer />
       <Team />
       <Tokennomic />
+      <Roadmap />
       <Frame />
       <Footer />
     </div>

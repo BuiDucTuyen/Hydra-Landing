@@ -8,11 +8,13 @@ module.exports = {
     extend: {
       backgroundImage: {
  hero: "url('../public/Img/Pattern.png')",
+  hero1: "url('../public/Img/Background.png')",
 chain: "url('../public/Img/bgChain.png')",
 build: "url('../public/Img/Ellipse 172.png')",
 token: "url('../public/Img/map-base 1.png')",
 frame: "url('../public/Img/bg.png')",
 footer: "url('../public/Img/Footer.png')",
+roadmap: "url('../public/Img/Bg (1).png')",
       },
       colors: {
  'ec-purple-700': 'rgba(39, 0, 23, 0.70)',
