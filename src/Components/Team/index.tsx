@@ -1,24 +1,66 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Team: React.FC = () => {
-  const imageNames: string[] = [
-    "team1.jpg",
-    "team2.jpg",
-    "team3.jpg",
-    "team4.jpg",
-    "team5.jpg",
+  const teamMembers = [
+    { name: "TRẦN NAM CHUNG", position: "FOUNDER - CHAIRMAN" },
+    { name: "NGUYỄN VĂN TUẤN", position: "CO-FOUNDER – VICE CHAIRMAN" },
+    { name: "TRẦN NAM CHUNG", position: "FOUNDER - CHAIRMAN" },
+    { name: "NGUYỄN VĂN TUẤN", position: "CO-FOUNDER – VICE CHAIRMAN" },
+    { name: "TRẦN NAM CHUNG", position: "FOUNDER - CHAIRMAN" },
   ];
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+    ],
+  };
+
   return (
-    <section className="bg-gray-100">
-      <div className="container mx-auto p-4">
-        <h1 className="text-2xl mb-5">Team</h1>
-        <div className="flex justify-center items-center gap-5 p-4">
-          {imageNames.map((imageName, index) => (
-            <img key={index} src={imageName} alt="Team" />
+    <section className="mt-[70px] mb-[70px]">
+      <nav className="max-w-[1200px] mx-auto">
+        <h1 className="text-[#270017] text-[48px] font-semibold mb-16 uppercase">
+          teams
+        </h1>
+        <Slider {...settings}>
+          {teamMembers.map((member, index) => (
+            <div key={index}>
+              <img className="mb-6" src="/Img/Frame 3213.png" alt="" />
+              <h2 className="text-[#32021E] text-left font-bold text-[18px]">
+                {member.name}
+              </h2>
+              <h3 className="text-ec-purple-700 text-left font-normal">
+                {member.position}
+              </h3>
+            </div>
           ))}
-        </div>
-      </div>
+        </Slider>
+      </nav>
     </section>
   );
 };
