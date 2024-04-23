@@ -1,6 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Tokennomic: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section className=" mt-[100px] animate-fadeInDown ">
       <nav className="max-w-[1200px] mx-auto mb-8">
@@ -8,13 +11,11 @@ const Tokennomic: React.FC = () => {
           <div>
             <img className="mb-5" src="./Img/Group 4.png" alt="" />
             <h1 className="text-[#270017] clash text-[40px] font-bold mb-4 uppercase">
-              Tokenomic
+              {t("Tokenomic")}
             </h1>
           </div>
           <div className="max-w-[450px] text-ec-purple-700 text-left text-[16px] font-normal">
-            Hyperas Chain stands at the vanguard of technological innovation
-            through its seamless integration of Federated Learning, Edge
-            Computing, and NPUs from mobile devices.
+            {t("Token")}
           </div>
         </div>
       </nav>

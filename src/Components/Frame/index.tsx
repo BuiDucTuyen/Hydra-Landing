@@ -1,11 +1,13 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Frame: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section className="py-12 animate-fadeInDown">
-      <nav className="max-w-[1200px] mx-auto bg-frame py-8 bg-no-repeat">
+      <nav className="max-w-[1200px] mx-auto bg-frame rounded-xl py-8 bg-no-repeat">
         <h1 className="text-[#270017] clash  font-medium text-[24px] mb-5">
-          Subscribe to Our Newsletter
+          {t("Subscribe")}
         </h1>
         <div className="flex justify-center items-center gap-4">
           <div className="flex h-[56px] max-w-[536px] w-full items-center gap-10 rounded-lg border border-solid border-gray-200">
@@ -16,7 +18,7 @@ const Frame: React.FC = () => {
             />
           </div>
           <button className="bg-[#EC008C] text-white text-[16px] font-semibold rounded-lg w-28 h-14">
-            SEND
+            {t("send")}
           </button>
         </div>
       </nav>

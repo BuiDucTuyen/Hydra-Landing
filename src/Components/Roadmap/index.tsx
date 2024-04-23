@@ -8,7 +8,7 @@ const RoadMap = () => {
     <div className="bg-roadmap bg-cover bg-no-repeat mb-[72px] animate-fadeInDown manrope">
       <section className="container mx-auto  ">
         <h1 className="text-[#270017] text-[40px] clash font-semibold uppercase text-center mt-[72px]">
-          Roadmap
+          {t("roadmap")}
         </h1>
         <React.Fragment>
           <div className="mt-[60px] hidden  lg:grid grid-cols-6 roadmap">
@@ -23,7 +23,7 @@ const RoadMap = () => {
                   className="object-contain w-8 h-8"
                 />
                 <p className="text-[#006D82] uppercase text-[16px] font-semibold gap-2">
-                  Phase 2
+                  {t("Phase 2")}
                 </p>
               </div>
               <div className="horizontal-line"></div>
@@ -41,20 +41,17 @@ const RoadMap = () => {
                   className="object-contain w-8 h-8"
                 />
                 <p className="text-[#006D82] uppercase text-[16px] font-semibold gap-2">
-                  Phase 4
+                  {t("Phase 4")}
                 </p>
               </div>
               <div className="platform-content   text-start absolute top-0 left-5">
                 <h5 className="text-[#32021E] font-bold  text-lg mt-5">
-                  Core Development Q2-2022
+                  {t("Q2-2022")}
                 </h5>
                 <ul className="list-disc pl-6 text-sm mt-2 text-rgba-50230">
-                  <li>Develop and deploy Hyperaschain</li>
-                  <li>Build ecosytem</li>
-                  <li>
-                    Test the ecosystem for security, scalability, and
-                    functionality
-                  </li>
+                  <li> {t("Develop")}</li>
+                  <li>{t("Build ecosytem")}</li>
+                  <li>{t("Test")}</li>
                 </ul>
               </div>
             </div>
@@ -62,15 +59,12 @@ const RoadMap = () => {
             <div className="col-span-2 relative bg-roadmap1 bg-no-repeat">
               <div className="platform-content  text-start absolute top-0 left-5">
                 <h5 className="text-[#32021E] font-bold  text-lg mt-5">
-                  Test net Q2 2023
+                  {t("Q2 2023")}
                 </h5>
                 <ul className="list-disc pl-6 text-sm mt-2 text-rgba-50230">
-                  <li>Dev test</li>
-                  <li>Public test</li>
-                  <li>
-                    Collect feedbacks about the platform from early partners and
-                    users
-                  </li>
+                  <li> {t("dev")}</li>
+                  <li> {t("public")}</li>
+                  <li> {t("Collect")}</li>
                 </ul>
               </div>
             </div>
@@ -82,7 +76,7 @@ const RoadMap = () => {
               </div>
               <div className="platform aspect-square max-w-[95px] w-full flex flex-col justify-center items-center absolute">
                 <p className="text-[#006D82] uppercase text-[16px] font-semibold gap-2">
-                  Phase 1
+                  {t("Phase 1")}
                 </p>
                 <img
                   src="./Img/cham.png"
@@ -92,13 +86,13 @@ const RoadMap = () => {
               </div>
               <div className="platform-content  text-start  absolute top-[50px] left-5">
                 <h5 className="text-[#32021E] font-bold  text-lg mt-5">
-                  Research & Development Q4-2021
+                  {t("Q4-2021 ")}
                 </h5>
                 <ul className="list-disc pl-6 text-sm mt-2 text-rgba-50230">
-                  <li>Research blockchain applications</li>
-                  <li>Develop a detailed roadmap</li>
-                  <li>Recruit key team members</li>
-                  <li>Outline whitepaper</li>
+                  <li> {t("Research ")}</li>
+                  <li> {t("detailed ")}</li>
+                  <li>{t("Recruit ")}</li>
+                  <li>{t("Outline ")}</li>
                 </ul>
               </div>
             </div>
@@ -109,7 +103,7 @@ const RoadMap = () => {
               </div>
               <div className="platform aspect-square max-w-[95px] w-full flex flex-col justify-center items-center absolute">
                 <p className="text-[#006D82] uppercase text-[16px] font-semibold gap-2">
-                  Phase 3
+                  {t("Phase 3")}
                 </p>
                 <img
                   src="./Img/cham.png"
@@ -119,12 +113,12 @@ const RoadMap = () => {
               </div>
               <div className="platform-content  text-start absolute top-[50px] left-5">
                 <h5 className="text-[#32021E] font-bold  text-lg mt-5">
-                  Community Building Q2 2023
+                  {t("Q3 2023")}
                 </h5>
                 <ul className="list-disc pl-6 text-sm mt-2 text-rgba-50230">
-                  <li>Build early adopters community</li>
-                  <li>Start marketing and awareness campaigns</li>
-                  <li>Recruit developers and partners</li>
+                  <li>{t("early")}</li>
+                  <li>{t("and")}</li>
+                  <li>{t("partners")}</li>
                 </ul>
               </div>
             </div>
@@ -135,7 +129,7 @@ const RoadMap = () => {
               </div>
               <div className="platform aspect-square max-w-[95px] w-full flex flex-col justify-center items-center absolute">
                 <p className="text-[#006D82] uppercase text-[16px] font-semibold gap-2">
-                  Phase 5
+                  {t("Phase 5")}
                 </p>
                 <img
                   src="./Img/cham.png"
@@ -145,19 +139,13 @@ const RoadMap = () => {
               </div>
               <div className="platform-content  text-start absolute top-[50px] left-5">
                 <h5 className="text-[#32021E] font-bold  text-lg mt-5">
-                  Mainnet - Expansion & Adoption
+                  {t("Mainnet")}
                 </h5>
                 <ul className="list-disc pl-6 text-sm mt-2 text-rgba-50230">
-                  <li>Release Hyperas chain Mainet</li>
-                  <li>Ecosystem expansion</li>
-                  <li>
-                    Develop additional platform use-cases to attract more users
-                    and partners
-                  </li>
-                  <li>
-                    Build out regional infrastructure for ecosystem’s widespread
-                    adoption
-                  </li>
+                  <li> {t("Mainet")}</li>
+                  <li> {t("expansion")}</li>
+                  <li>{t("platform")}</li>
+                  <li>{t("regional")}</li>
                 </ul>
               </div>
             </div>

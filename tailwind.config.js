@@ -12,7 +12,7 @@ module.exports = {
 chain: "url('../public/Img/bgChain.png')",
 build: "url('../public/Img/Ellipse 172.png')",
 token: "url('../public/Img/map-base 1.png')",
-frame: "url('../public/Img/bg.png')",
+frame: "url('../public/Img/Submit.png')",
 footer: "url('../public/Img/Footer.png')",
 roadmap: "url('../public/Img/Roadmap.png')",
 roadmap1: "url('../public/Img/Rectangle 701.png')",

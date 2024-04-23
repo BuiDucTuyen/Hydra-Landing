@@ -2,7 +2,9 @@ import React from "react";
 import { DownOutlined } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Dropdown, Space } from "antd";
+import { useTranslation } from "react-i18next";
 const Navbar: React.FC = () => {
+  const { t } = useTranslation();
   const explore: MenuProps["items"] = [
     {
       label: (
@@ -202,34 +204,34 @@ const Navbar: React.FC = () => {
         <img className="" src="./Img/Logo.png" alt="Logo" />
         <div className="">
           <ul className="flex text-[#270017] text-[14px] font-normal justify-between items-center gap-10">
-            <Dropdown menu={{ items: explore }}>
+            <Dropdown className="text-[16px] " menu={{ items: explore }}>
               <Space>
-                Explore
+                {t("explore")}
                 <DownOutlined />
               </Space>
             </Dropdown>
-            <Dropdown menu={{ items: applications }}>
+            <Dropdown className="text-[16px] " menu={{ items: applications }}>
               <Space>
-                Applications
+                {t("applications")}
                 <DownOutlined />
               </Space>
             </Dropdown>
-            <Dropdown menu={{ items: foundation }}>
+            <Dropdown className="text-[16px] " menu={{ items: foundation }}>
               <Space>
-                Foundation
+                {t("Foundation")}
                 <DownOutlined />
               </Space>
             </Dropdown>
-            <Dropdown menu={{ items: community }}>
+            <Dropdown className="text-[16px] h" menu={{ items: community }}>
               <Space>
-                Community
+                {t("Community")}
                 <DownOutlined />
               </Space>
             </Dropdown>
           </ul>
         </div>
-        <button className="w-32 h-10 px-5 py-2 gap-2 rounded-[4px]  border border-solid border-[#EC008C] text-[#EC008C] text-[14px]">
-          Get Started
+        <button className="w-32 font-medium h-10 px-5 py-2 gap-2 rounded-[4px]  border border-solid border-[#EC008C] text-[#EC008C] text-[14px]">
+          {t("Get")}
         </button>
       </nav>
     </section>

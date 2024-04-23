@@ -2,8 +2,10 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useTranslation } from "react-i18next";
 
 const Team: React.FC = () => {
+  const { t } = useTranslation();
   const teamMembers = [
     { name: "TRẦN NAM CHUNG", position: "FOUNDER - CHAIRMAN" },
     { name: "NGUYỄN VĂN TUẤN", position: "CO-FOUNDER – VICE CHAIRMAN" },
@@ -45,7 +47,7 @@ const Team: React.FC = () => {
     <section className="mt-[70px] mb-[70px]">
       <nav className="max-w-[1200px] mx-auto">
         <h1 className="text-[#270017] clash text-[48px] font-semibold mb-16 uppercase">
-          teams
+          {t("team")}
         </h1>
         <Slider {...settings}>
           {teamMembers.map((member, index) => (

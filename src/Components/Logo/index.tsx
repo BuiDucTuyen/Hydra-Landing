@@ -1,14 +1,17 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Logo = () => {
+  const { t } = useTranslation();
   return (
     <div className="bg-chain bg-no-repeat animate-fadeInDown">
       <div className="flex container mx-auto mb-10 animate-fadeInDown mt-[64px]">
         <div className="gap-5 p-4 overflow-x-hidden">
           <h1 className="text-[#270017] text-[32px] mb-16 clash font-semibold px-5 text-center">
-            The most <span className="text-[#EC008C]">innovative builders</span>
+            {t("The")}
+            <span className="text-[#EC008C]"> {t("innovative")}</span>
             <br />
-            build on Hyperas Chain{" "}
+            {t("build")}
           </h1>
           <div className="flex gap-10 p-4 mb-16 overflow-x-hidden select-none">
             <div className="marquee-container flex flex-row gap-20">

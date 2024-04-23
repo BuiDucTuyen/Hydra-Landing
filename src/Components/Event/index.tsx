@@ -1,7 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Event: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section className="bg-gradient-to-br  from-teal-500 to-pink-600 animate-slide-down">
       <div className="container mx-auto px-4 py-2 sm:px-6 lg:px-8">
@@ -11,7 +13,7 @@ const Event: React.FC = () => {
               href="/"
               className="flex gap-2 text-[16px] uppercase text-white items-center"
             >
-              Breakpoint 2024 - New City. New Vibes - Get Early Access
+              {t("Event")}
               <AiOutlineArrowRight />
             </a>
           </div>

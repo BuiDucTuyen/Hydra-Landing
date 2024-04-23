@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
             <a href="/">
               <img
                 style={{ fontSize: "24px" }}
-                src="./Img/3670147 1.png"
+                src="./Img/2111646 1.png"
                 alt=""
               />
             </a>
@@ -105,7 +105,7 @@ const Footer: React.FC = () => {
             </div>
             <div className="text-left ml-4">
               <h2 className="text-[1rem] text-[#270017] uppercase font-semibold">
-                Applications
+                {t("applications")}
               </h2>
               <ul className="flex flex-col  text-ec-purple-700 text-[14px] gap-4 mt-3">
                 <a href="https://salala.io/" target="_blank" rel="noreferrer">
@@ -163,7 +163,7 @@ const Footer: React.FC = () => {
             </div>
             <div className="text-left ml-4">
               <h2 className="text-[1rem] text-[#270017] uppercase font-semibold">
-                Community
+                {t("Community")}
               </h2>
               <ul className="flex flex-col  text-ec-purple-700 text-[14px] gap-4 mt-3">
                 <a
