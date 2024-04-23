@@ -2,19 +2,19 @@ import React from "react";
 
 const Hero: React.FC = () => {
   return (
-    <section className="animate-fadeInDown">
+    <section className="animate-fadeInDown py-20">
       <nav className="container mx-auto flex justify-center">
         <div>
-          <h1 className="text-[72px] mb-8 text-left text-[#270017] font-medium  max-w-[1000px]">
+          <h1 className="text-[72px] mb-8 text-left clash text-[#270017] font-bold  max-w-[1000px]">
             BLOCKCHAIN ft. AI WITHOUT
             <span className="text-[#EC008C]">LIMITS</span>{" "}
           </h1>
-          <h2 className="text-[#523345] mb-16 text-[18px] text-left font-normal max-w-[542px]">
+          <h2 className="text-[#523345] mb-16 text-[18px] text-left manrope font-normal max-w-[542px]">
             Hyperas chain aims to build an infinitely scalable distributed
             high-performance computing power network based on blockchain
             technology.
           </h2>
-          <div className="max-w-[542px] flex gap-4 justify-start">
+          <div className="max-w-[542px] flex gap-4 justify-start manrope">
             <button className="bg-[#EC008C] text-[20px] rounded px-6 py-4 text-white  w-40 h-14">
               Get Started
             </button>
@@ -23,10 +23,12 @@ const Hero: React.FC = () => {
             </button>
           </div>
         </div>
-        <div className="bg-hero1">
-          <video autoPlay muted loop className="w-full h-full object-cover">
-            <source src="../Img/video.mp4" type="video/mp4" />
-          </video>
+        <div className="bg-hero1 flex justify-center items-center">
+          <img
+            className="w-[760px] h-["
+            src="../Img/video-unscreen.gif"
+            alt=""
+          />
         </div>
       </nav>
     </section>

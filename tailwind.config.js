@@ -14,10 +14,14 @@ build: "url('../public/Img/Ellipse 172.png')",
 token: "url('../public/Img/map-base 1.png')",
 frame: "url('../public/Img/bg.png')",
 footer: "url('../public/Img/Footer.png')",
-roadmap: "url('../public/Img/Bg (1).png')",
+roadmap: "url('../public/Img/Roadmap.png')",
+roadmap1: "url('../public/Img/Rectangle 701.png')",
       },
       colors: {
  'ec-purple-700': 'rgba(39, 0, 23, 0.70)',
+
+        'rgba-50230': 'rgba(50, 2, 30, 0.85)',
+
       },
        keyframes: {
         fadeInDown: {

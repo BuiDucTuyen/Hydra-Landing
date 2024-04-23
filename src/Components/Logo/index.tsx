@@ -5,7 +5,7 @@ const Logo = () => {
     <div className=" bg-chain bg-no-repeat animate-fadeInDown">
       <div className="flex container mx-auto  mb-10 animate-fadeInDown mt-[64px]">
         <div className=" gap-5 p-4 overflow-x-hidden">
-          <h1 className="text-[#270017] text-[32px] mb-16 font-semibold px-5  text-center">
+          <h1 className="text-[#270017] text-[32px] mb-16 clash font-semibold px-5  text-center">
             The most <span className="text-[#EC008C]">innovative builders</span>{" "}
             <br />
             build on Hyperas Chain{" "}
@@ -40,7 +40,7 @@ const renderLogo = (
   width: number,
   height: number
 ) => (
-  <li className="leading-0 !text-zinc-200">
+  <li className="leading-0 !text-zinc-200 logo-container">
     <img
       alt={alt}
       loading="lazy"
@@ -50,6 +50,7 @@ const renderLogo = (
       data-nimg="1"
       style={{ color: "transparent" }}
       src={src}
+      className="logo-image"
     />
   </li>
 );

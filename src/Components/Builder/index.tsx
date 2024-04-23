@@ -5,12 +5,12 @@ const Build: React.FC = () => {
     <section className="bg-build bg-no-repeat animate-fadeInDown">
       <nav className="max-w-[1200px] mx-auto mt-20 flex justify-between items-center">
         <div className="max-w-[820px] text-left">
-          <h1 className="text-[#270017] text-[40px] mb-6 font-semibold">
+          <h1 className="text-[#270017] text-[40px] clash mb-6 font-semibold">
             Fast, secure, and affordable blockchain and AI infrastructure that
             scales.
           </h1>
           <h2
-            className="text-ec-purple-700 text-[18px]
+            className="text-ec-purple-700 text-[18px] manrope
           "
           >
             Hyperas Chain stands at the vanguard of technological innovation

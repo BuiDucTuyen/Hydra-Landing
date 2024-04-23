@@ -2,12 +2,12 @@ import React from "react";
 
 const Tokennomic: React.FC = () => {
   return (
-    <section className=" mt-[72px] animate-fadeInDown">
+    <section className=" mt-[100px] animate-fadeInDown ">
       <nav className="max-w-[1200px] mx-auto mb-8">
         <div className="flex justify-between items-center">
           <div>
             <img className="mb-5" src="./Img/Group 4.png" alt="" />
-            <h1 className="text-[#270017] text-[40px] font-bold mb-4 uppercase">
+            <h1 className="text-[#270017] clash text-[40px] font-bold mb-4 uppercase">
               Tokenomic
             </h1>
           </div>
