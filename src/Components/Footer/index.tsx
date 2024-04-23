@@ -3,7 +3,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18n/i18n";
 const Footer: React.FC = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const toggleLanguage = () => {
     const newLanguage = i18n.language === "en" ? "vi" : "en";

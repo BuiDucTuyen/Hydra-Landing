@@ -191,18 +191,7 @@ const Navbar: React.FC = () => {
       ),
       key: "1",
     },
-    // // {
-    // //   label: (
-    // //     <a
-    // //       target="_blank"
-    // //       rel="noopener noreferrer"
-    // //       href="https://www.hyperaschain.com/news"
-    // //     >
-    // //       Blog
-    // //     </a>
-    // //   ),
-    // //   key: "2",
-    // },
+
     {
       type: "divider",
     },
