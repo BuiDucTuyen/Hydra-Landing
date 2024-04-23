@@ -8,7 +8,7 @@ const Build: React.FC = () => {
     <section className="bg-build bg-no-repeat animate-fadeInDown">
       <nav className="max-w-[1200px] mx-auto mt-20 flex justify-between items-center">
         <div className="max-w-[820px] text-left">
-          <h1 className="text-[#270017] text-[40px] clash mb-6 font-semibold">
+          <h1 className="text-[#270017] text-[36px] clash mb-6 font-semibold">
             {t("Fast")}
           </h1>
           <h2
@@ -19,6 +19,9 @@ const Build: React.FC = () => {
           </h2>
         </div>
         <img src="./Img/snapedit_1711767796429 2.png" alt="" />
+      </nav>
+      <nav className="max-w-[1200px] mx-auto mt-[48px] mb-[80px]">
+        <img src="./Img/Demo.png" alt="" />
       </nav>
     </section>
   );
