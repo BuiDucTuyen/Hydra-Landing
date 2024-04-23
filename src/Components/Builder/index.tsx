@@ -21,7 +21,7 @@ const Build: React.FC = () => {
         <img src="./Img/snapedit_1711767796429 2.png" alt="" />
       </nav>
       <nav className="max-w-[1200px] mx-auto mt-[48px] mb-[80px]">
-        <img src="./Img/Demo.png" alt="" />
+        <img src="./Img/Demo (1).png" alt="" />
       </nav>
     </section>
   );
