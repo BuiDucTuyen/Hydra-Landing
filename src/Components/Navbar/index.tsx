@@ -204,28 +204,34 @@ const Navbar: React.FC = () => {
         <img className="" src="./Img/Logo.png" alt="Logo" />
         <div className="">
           <ul className="flex text-[#270017] text-[14px] font-normal justify-between items-center gap-10">
-            <Dropdown className="text-[16px] " menu={{ items: explore }}>
+            <Dropdown className="text-[16px] clash  " menu={{ items: explore }}>
               <Space>
                 {t("explore")}
-                <DownOutlined />
+                <img src="../svg/direction-down 01.svg" alt="" />
               </Space>
             </Dropdown>
-            <Dropdown className="text-[16px] " menu={{ items: applications }}>
+            <Dropdown
+              className="text-[16px] clash"
+              menu={{ items: applications }}
+            >
               <Space>
                 {t("applications")}
-                <DownOutlined />
+                <img src="../svg/direction-down 01.svg" alt="" />
               </Space>
             </Dropdown>
-            <Dropdown className="text-[16px] " menu={{ items: foundation }}>
+            <Dropdown
+              className="text-[16px] clash"
+              menu={{ items: foundation }}
+            >
               <Space>
                 {t("Foundation")}
-                <DownOutlined />
+                <img src="../svg/direction-down 01.svg" alt="" />
               </Space>
             </Dropdown>
-            <Dropdown className="text-[16px] h" menu={{ items: community }}>
+            <Dropdown className="text-[16px] clash" menu={{ items: community }}>
               <Space>
                 {t("Community")}
-                <DownOutlined />
+                <img src="../svg/direction-down 01.svg" alt="" />
               </Space>
             </Dropdown>
           </ul>

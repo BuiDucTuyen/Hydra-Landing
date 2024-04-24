@@ -5,9 +5,9 @@ const Hero: React.FC = () => {
   const { t } = useTranslation();
   return (
     <section className="animate-fadeInDown py-20">
-      <nav className="container mx-auto flex justify-center">
-        <div>
-          <h1 className="text-[72px] mb-8 text-left clash text-[#270017] font-bold  max-w-[1000px]">
+      <nav className=" flex justify-between mx-auto ">
+        <div className="ml-[200px] max-w-[1000px]">
+          <h1 className="text-[80px] text-left mb-8 clash text-[#270017] font-semibold  ">
             BLOCKCHAIN ft. AI WITHOUT
             <span className="text-[#EC008C]"> LIMITS</span>{" "}
           </h1>
@@ -23,8 +23,13 @@ const Hero: React.FC = () => {
             </button>
           </div>
         </div>
-        <div className="bg-hero1 flex justify-center items-center">
-          <img className="w-[760px]" src="../Img/video-unscreen.gif" alt="" />
+        <div className="bg-hero1 bg-cover pr-20">
+          {/* <img className="w-[760px]" src="../Img/video-unscreen.gif" alt="" /> */}
+          <iframe
+            src="https://my.spline.design/youarefightingeveryday-c2e9cd6a150cf5fb10aa974c5b8785a9/"
+            frameBorder="0"
+            className="w-[708px] h-[620px]"
+          ></iframe>
         </div>
       </nav>
     </section>

@@ -18,35 +18,56 @@ const Logo = () => {
               <ul className="flex flex-row min-w-full run flex-shrink-0 content-around items-center gap-32 md:animate-marqueeScroll">
                 {renderLogo(
                   "Armory",
-                  "../Img/egabid (1).png",
+                  "../svg/egabid.svg",
                   220,
                   64,
                   "https://egabid.com/"
                 )}
                 {renderLogo(
                   "Armory",
-                  "../Img/pindias.png",
+                  "../svg/Frame 3222.svg",
                   220,
                   64,
                   "https://pindias.com/"
                 )}
                 {renderLogo(
                   "Armory",
-                  "../Img/hyratek.png",
+                  "../svg/Group (1).svg",
                   220,
                   64,
                   "https://docs.hyperaschain.com/technology/architecture"
                 )}
                 {renderLogo(
                   "Armory",
-                  "../Img/pindias.png",
+                  "../svg/Frame.svg",
                   220,
                   64,
                   "https://pindias.com/"
                 )}
                 {renderLogo(
                   "Armory",
-                  "../Img/hyratek.png",
+                  "../svg/Frame 3222.svg",
+                  220,
+                  64,
+                  "https://pindias.com/"
+                )}
+                {renderLogo(
+                  "Armory",
+                  "../svg/Group.svg",
+                  220,
+                  64,
+                  "https://salala.io/"
+                )}
+                {renderLogo(
+                  "Armory",
+                  "../svg/Group (1).svg",
+                  220,
+                  64,
+                  "https://salala.io/"
+                )}
+                {renderLogo(
+                  "Armory",
+                  "../svg/Group.svg",
                   220,
                   64,
                   "https://docs.hyperaschain.com/technology/architecture"
@@ -55,38 +76,59 @@ const Logo = () => {
               <ul className="flex flex-row min-w-full run flex-shrink-0 content-around items-center gap-32 md:animate-marqueeScroll">
                 {renderLogo(
                   "Armory",
-                  "../Img/egabid (1).png",
+                  "../svg/egabid.svg",
                   220,
                   64,
                   "https://egabid.com/"
                 )}
                 {renderLogo(
                   "Armory",
-                  "../Img/pindias.png",
+                  "../svg/Frame 3222.svg",
                   220,
                   64,
                   "https://pindias.com/"
                 )}
                 {renderLogo(
                   "Armory",
-                  "../Img/hyratek.png",
+                  "../svg/Group (1).svg",
                   220,
                   64,
                   "https://docs.hyperaschain.com/technology/architecture"
                 )}
                 {renderLogo(
                   "Armory",
-                  "../Img/egabid (1).png",
+                  "../svg/Frame.svg",
                   220,
                   64,
-                  "https://egabid.com/"
+                  "https://pindias.com/"
                 )}
                 {renderLogo(
                   "Armory",
-                  "../Img/hyratek.png",
+                  "../svg/Frame 3222.svg",
                   220,
                   64,
-                  "https://docs.hyperaschain.com/technology/architecture"
+                  "https://pindias.com/"
+                )}
+                {renderLogo(
+                  "Armory",
+                  "../svg/Group.svg",
+                  220,
+                  64,
+                  "https://salala.io/"
+                )}
+                {renderLogo(
+                  "Armory",
+                  "../svg/Group (1).svg",
+                  220,
+                  64,
+                  "https://salala.io/"
+                )}
+                {renderLogo(
+                  "Armory",
+                  "../svg/Frame.svg",
+                  220,
+                  64,
+                  "https://pindias.com/"
                 )}
               </ul>
             </div>
@@ -117,7 +159,7 @@ const renderLogo = (
         data-nimg="1"
         style={{ color: "transparent" }}
         src={src}
-        className="logo-image transition-opacity duration-300 ease-in-out hover:opacity-80"
+        className="logo-image transition-opacity p-2 duration-300 ease-in-out hover:opacity-80"
       />
     </a>
   </li>

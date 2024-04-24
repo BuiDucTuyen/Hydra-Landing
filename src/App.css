@@ -94,7 +94,7 @@
 }
 
 .marquee-container {
-  animation: marqueeScroll 40s linear infinite;
+  animation: marqueeScroll 80s linear infinite;
 }
 
 .marquee-container:hover {
@@ -118,7 +118,7 @@
 @font-face {
   font-family: "ClashDisplay";
   src: local("AirbnbCerealLight"),
-    url("../public/Fonts/ClashDisplay-Bold.otf") format("truetype");
+    url("../public/Fonts/ClashDisplay-Semibold.otf") format('woff');
   font-weight: normal;
   font-style: normal;
 }
