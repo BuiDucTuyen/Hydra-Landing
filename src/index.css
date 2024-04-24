@@ -65,7 +65,7 @@ code {
 
 .logo-container:hover .logo-image {
   border: 2px solid #EC008C;
-  /* Màu và độ rộng của border khi hover */
+
 }
 body,
 select {
@@ -147,15 +147,11 @@ input[type="number"] {
   inset: auto 0 0 auto;
   transform-origin: 0%;
 }
-.logo-container:hover {
-  border: 1px solid white;
-  /* Tạo border viền trắng */
-  background-color: white;
-  /* Đổi màu nền thành trắng */
-}
+
 
 .logo-image:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
   
 }
 .coinUtility .rightSide li::after {

@@ -14,11 +14,11 @@ const Hero: React.FC = () => {
           <h2 className="text-[#523345] mb-16 text-[18px] text-left manrope font-normal max-w-[542px]">
             {t("Hyperas")}
           </h2>
-          <div className="max-w-[542px] flex gap-4 justify-start manrope">
-            <button className="bg-[#EC008C] text-[18px] rounded px-6 py-4 text-white  w-40 h-14">
+          <div className="max-w-[542px] flex gap-6 justify-start manrope">
+            <button className="bg-[#EC008C] w-32 font-medium h-12 px-5 py-2 gap-2 rounded-[4px] border border-solid border-[#EC008C] text-white text-[14px]">
               {t("Get")}
             </button>
-            <button className="bg-[#FFF] border border-solid border-gray-300 font-medium text-[20px] rounded px-6 py-4 text-[#684A5D]  w-40 h-14">
+            <button className="w-32 font-medium h-12 px-5 py-2 gap-2 rounded-[4px] border border-solid border-[#EC008C] text-[#EC008C] text-[14px]">
               {t("Read")}
             </button>
           </div>
