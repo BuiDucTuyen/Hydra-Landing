@@ -16,9 +16,9 @@ const Footer: React.FC = () => {
     <footer className="bg-footer animate-fadeInDown py-12 manrope">
       <section className="max-w-[1200px] p-4 mx-auto flex justify-between text-white ">
         <nav className="">
-          <a href="/">
+          <div>
             <img className="mb-5" src="../Img/logo.png" alt="" />
-          </a>
+          </div>
 
           <div className="flex space-x-5 mb-5 mt-10">
             <a href="/">
