@@ -5,7 +5,7 @@ const RoadMap = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-roadmap bg-cover bg-no-repeat mb-[72px] animate-fadeInDown manrope">
+    <div className="bg-roadmap bg-center bg-no-repeat mb-[72px] animate-fadeInDown manrope">
       <section className="container mx-auto  ">
         <h1 className="text-[#270017] text-[40px] clash font-semibold uppercase text-center mt-[72px]">
           {t("roadmap")}
@@ -65,6 +65,8 @@ const RoadMap = () => {
                   <li> {t("dev")}</li>
                   <li> {t("public")}</li>
                   <li> {t("Collect")}</li>
+                  <li> {t("Omnichain")}</li>
+                  <li> {t("Hackathon")}</li>
                 </ul>
               </div>
             </div>
@@ -145,7 +147,7 @@ const RoadMap = () => {
                   <li> {t("Mainet")}</li>
                   <li> {t("expansion")}</li>
                   <li>{t("platform")}</li>
-                  <li>{t("regional")}</li>
+                  {/* <li>{t("regional")}</li> */}
                 </ul>
               </div>
             </div>

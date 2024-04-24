@@ -14,7 +14,7 @@ const Frame: React.FC = () => {
             <input
               type="text"
               placeholder="Enter your email"
-              className="flex-1 px-[32px] py-[14px] outline-none"
+              className="flex-1 px-[32px] rounded-md py-[14px] outline-none"
             />
           </div>
           <button className="bg-[#EC008C] text-white text-[16px] font-semibold rounded-lg w-28 h-14">
