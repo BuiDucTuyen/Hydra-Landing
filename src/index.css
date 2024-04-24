@@ -147,7 +147,17 @@ input[type="number"] {
   inset: auto 0 0 auto;
   transform-origin: 0%;
 }
+.logo-container:hover {
+  border: 1px solid white;
+  /* Tạo border viền trắng */
+  background-color: white;
+  /* Đổi màu nền thành trắng */
+}
 
+.logo-image:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  
+}
 .coinUtility .rightSide li::after {
   content: "";
   position: absolute;
@@ -178,12 +188,12 @@ input[type="number"] {
 
 .horizontal-line {
   position: absolute;
-  width: 1920px;
+  width: 1440px;
   height: 8px;
   transform: translate(-18.7%, 50%);
   bottom: 0;
   opacity: 0.1;
-  background: linear-gradient(294.72deg, #ff4581 9.05%, #4388dd 79.28%);
+  background: linear-gradient(90deg, rgba(253, 221, 240, 0.00) 0%, #FFC5E7 13.5%, #FB89CC 59.5%, #0094B0 85%, rgba(0, 148, 176, 0.00) 100%);
 }
 
 .vertical-line {

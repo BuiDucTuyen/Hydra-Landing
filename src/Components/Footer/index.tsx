@@ -18,7 +18,11 @@ const Footer: React.FC = () => {
         <nav className="">
           <img className="mb-5" src="../svg/Group 3.svg" alt="" />
           <div className="flex space-x-5 mb-5 mt-10">
-            <a href="/">
+            <a
+              href="https://www.youtube.com/@Hyperaschain"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 style={{ fontSize: "24px" }}
                 src="./Img/3670147 1.png"
@@ -47,21 +51,25 @@ const Footer: React.FC = () => {
                 alt=""
               />
             </a>
-            <a href="/">
+            {/* <a href="/">
               <img
                 style={{ fontSize: "24px" }}
                 src="./Img/Discord.png"
                 alt=""
               />
-            </a>
-            <a href="/">
+            </a> */}
+            {/* <a href="/">
               <img
                 style={{ fontSize: "24px" }}
                 src="./Img/Group 4 (1).png"
                 alt=""
               />
-            </a>
-            <a href="/">
+            </a> */}
+            <a
+              href="https://t.me/hyperaschaingroup"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 style={{ fontSize: "24px" }}
                 src="./Img/2111646 1.png"
@@ -92,7 +100,7 @@ const Footer: React.FC = () => {
                 <a className="" href="/">
                   <li>Documentation</li>
                 </a>
-                <a className="" href="/">
+                <a className="" href="https://www.hyperaschain.com/news">
                   <li>Blog</li>
                 </a>
                 <a className="" href="/">

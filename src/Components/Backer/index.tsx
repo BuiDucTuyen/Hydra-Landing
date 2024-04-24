@@ -6,7 +6,7 @@ const Backer: React.FC = () => {
   return (
     <section className="bg-[#D4F3FF] py-16 mt-[50px] animate-fadeInDown">
       <nav className="max-w-[1200px] mx-auto">
-        <h1 className="text-[#270017] clash text-[48px] font-semibold mb-4 uppercase">
+        <h1 className="text-[#270017] clash text-[40px] font-semibold mb-4 uppercase">
           {t("Backers")}
         </h1>
         <h2 className=" text-ec-purple-700 text-center text-[18px] mb-12 font-normal">

@@ -25,7 +25,7 @@
          "Phase 3" : "Giai đoạn 3",
          "Phase 4" : "Giai đoạn 4",
          "Phase 5" : "Giai đoạn 5",
-            "Q2-2022" : "Phát triển cốt lõi Q2-2022",
+            "Q2-2022" : "Mạng thử nghiệm Q1-2024",
             "Develop" : "Phát triển và triển khai Hyperaschain",
             "Build ecosytem" : "Xây dựng hệ sinh thái",
                "Test" : "Kiểm tra hệ sinh thái về tính bảo mật, khả năng mở rộng và chức năng",
@@ -33,10 +33,10 @@
                  "dev" : "Kiểm tra"  ,
                  "public" : "Kiểm tra công khai",
                    "Collect" : "Thu thập phản hồi về nền tảng từ các đối tác và người dùng đầu tiên",
-                   "Q4-2021" : "Nghiên cứu & Phát triển Q4-2021",
-                     "Research " : "Nghiên cứu ứng dụng blockchain",
-                      "detailed" : "Xây dựng lộ trình chi tiết",
-                      "Recruit" : "Tuyển thành viên chủ chốt trong nhóm",
+                   "QQ4-2021" : "Phát triển cốt lõi Q2-2022",
+                     "Research " : "Phát triển và triển khai Hyperaschain",
+                      "detailedd" : "Xây dựng hệ sinh thái",
+                      "Recruitt" : "Kiểm tra hệ sinh thái về tính bảo mật, khả năng mở rộng và chức năng",
                       "Outline" : "Sách trắng phác thảo",
                       "Q3 2023" : "Xây dựng cộng đồng Quý 2 năm 2023",
                       "early" :  "Xây dựng cộng đồng những người chấp nhận sớm",
@@ -48,7 +48,7 @@
                          "platform" : " Phát triển các trường hợp sử dụng nền tảng bổ sung để thu hút nhiều người dùng và đối tác hơn",
                      "regional" : " Xây dựng cơ sở hạ tầng khu vực cho hệ sinh thái rộng khắp nhận con nuôi",
                      "Subscribe" : "Theo dõi bản tin của chúng tôi",
-                     "send" : "Gửi"
+                     "send" : "GỬI"
 
 
                 

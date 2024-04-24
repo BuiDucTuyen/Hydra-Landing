@@ -93,14 +93,6 @@
   }
 }
 
-.marquee-container {
-  animation: marqueeScroll 80s linear infinite;
-}
-
-.marquee-container:hover {
-  animation-play-state: paused;
-}
-
 .run {
   white-space: nowrap;
   overflow: hidden;

@@ -16,6 +16,7 @@ frame: "url('../public/Img/Submit.png')",
 footer: "url('../public/Img/Footer.png')",
 roadmap: "url('../public/Img/Roadmap.png')",
 roadmap1: "url('../public/Img/Rectangle 701.png')",
+roadmap2: "url('../public/Img/Rectangle 698 (1).png')",
       },
       colors: {
  'ec-purple-700': 'rgba(39, 0, 23, 0.70)',

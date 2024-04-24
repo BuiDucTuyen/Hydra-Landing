@@ -46,7 +46,7 @@ const Team: React.FC = () => {
   return (
     <section className="mt-[70px] mb-[70px]">
       <nav className="max-w-[1200px] mx-auto">
-        <h1 className="text-[#270017] clash text-[48px] font-semibold mb-16 uppercase">
+        <h1 className="text-[#270017] clash text-[40px] font-semibold mb-16 uppercase">
           {t("team")}
         </h1>
         <Slider {...settings}>

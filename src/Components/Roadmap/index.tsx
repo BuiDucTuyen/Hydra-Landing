@@ -30,7 +30,7 @@ const RoadMap = () => {
             </div>
 
             {/*1*/}
-            <div className="col-span-2 relative border-r bg-roadmap1 bg-no-repeat border-[#EC008C] h-[270px]">
+            <div className="col-span-2 relative border-r bg-roadmap2 bg-no-repeat border-[#EC008C] h-[270px]">
               <div className="aura active">
                 <div className="core"></div>
               </div>
@@ -45,10 +45,10 @@ const RoadMap = () => {
                 </p>
               </div>
               <div className="platform-content   text-start absolute top-0 left-5">
-                <h5 className="text-[#32021E] font-bold  text-lg mt-5">
+                <h5 className="text-[#32021E] font-bold mb-2  text-lg mt-5">
                   {t("Q2-2022")}
                 </h5>
-                <ul className="list-disc pl-6 text-sm mt-2 text-rgba-50230">
+                <ul className="list-disc px-6 text-sm mt-2 flex flex-col gap-2 text-rgba-50230">
                   <li> {t("Develop")}</li>
                   <li>{t("Build ecosytem")}</li>
                   <li>{t("Test")}</li>
@@ -56,12 +56,12 @@ const RoadMap = () => {
               </div>
             </div>
             {/* Q2-2024 */}
-            <div className="col-span-2 relative bg-roadmap1 bg-no-repeat">
+            <div className="col-span-2 relative bg-roadmap2 bg-no-repeat">
               <div className="platform-content  text-start absolute top-0 left-5">
                 <h5 className="text-[#32021E] font-bold  text-lg mt-5">
                   {t("Q2 2023")}
                 </h5>
-                <ul className="list-disc pl-6 text-sm mt-2 text-rgba-50230">
+                <ul className="list-disc px-6 text-sm flex flex-col gap-2 mt-2 text-rgba-50230">
                   <li> {t("dev")}</li>
                   <li> {t("public")}</li>
                   <li> {t("Collect")}</li>
@@ -70,7 +70,7 @@ const RoadMap = () => {
             </div>
 
             {/* 3 */}
-            <div className="col-span-2 border-l border-[#FF4581] bg-roadmap1 bg-no-repeat relative h-[230px] ">
+            <div className="col-span-2 border-l border-[#FF4581] bg-roadmap2 bg-no-repeat relative h-[230px] ">
               <div className="aura active current">
                 <div className="core"></div>
               </div>
@@ -86,13 +86,13 @@ const RoadMap = () => {
               </div>
               <div className="platform-content  text-start  absolute top-[50px] left-5">
                 <h5 className="text-[#32021E] font-bold  text-lg mt-5">
-                  {t("Q4-2021 ")}
+                  {t("QQ4-2021")}
                 </h5>
-                <ul className="list-disc pl-6 text-sm mt-2 text-rgba-50230">
+                <ul className="list-disc px-6 text-sm mt-2 flex flex-col gap-2 text-rgba-50230">
                   <li> {t("Research ")}</li>
-                  <li> {t("detailed ")}</li>
-                  <li>{t("Recruit ")}</li>
-                  <li>{t("Outline ")}</li>
+                  <li> {t("detailedd")}</li>
+                  <li>{t("Recruitt")}</li>
+                  {/* <li>{t("Outline ")}</li> */}
                 </ul>
               </div>
             </div>
@@ -115,7 +115,7 @@ const RoadMap = () => {
                 <h5 className="text-[#32021E] font-bold  text-lg mt-5">
                   {t("Q3 2023")}
                 </h5>
-                <ul className="list-disc pl-6 text-sm mt-2 text-rgba-50230">
+                <ul className="list-disc px-6 flex flex-col gap-2 text-sm mt-2 text-rgba-50230">
                   <li>{t("early")}</li>
                   <li>{t("and")}</li>
                   <li>{t("partners")}</li>
@@ -141,7 +141,7 @@ const RoadMap = () => {
                 <h5 className="text-[#32021E] font-bold  text-lg mt-5">
                   {t("Mainnet")}
                 </h5>
-                <ul className="list-disc pl-6 text-sm mt-2 text-rgba-50230">
+                <ul className="list-disc px-6 flex flex-col gap-2 text-sm mt-2 text-rgba-50230">
                   <li> {t("Mainet")}</li>
                   <li> {t("expansion")}</li>
                   <li>{t("platform")}</li>

@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   const { t } = useTranslation();
   return (
     <section className="animate-fadeInDown py-20">
-      <nav className=" flex justify-between mx-auto ">
+      <nav className=" max-w-[1920px] flex justify-between mx-auto ">
         <div className="ml-[200px] max-w-[1000px]">
           <h1 className="text-[80px] text-left mb-8 clash text-[#270017] font-semibold  ">
             BLOCKCHAIN ft. AI WITHOUT
