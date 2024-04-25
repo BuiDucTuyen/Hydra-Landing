@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
     localStorage.setItem("language", lang);
   };
   return (
-    <footer className="bg-footer animate-fadeInDown py-12 manrope">
+    <footer className="bg-footer bg-no-repeat bg-cover animate-fadeInDown py-12 manrope">
       <section className="max-w-[1200px] p-4 mx-auto flex justify-between text-white ">
         <nav className="">
           <img className="mb-5" src="../svg/Group 3.svg" alt="" />
