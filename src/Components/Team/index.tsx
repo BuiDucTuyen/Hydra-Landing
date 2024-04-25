@@ -7,11 +7,13 @@ import { useTranslation } from "react-i18next";
 const Team: React.FC = () => {
   const { t } = useTranslation();
   const teamMembers = [
-    { name: "TRẦN NAM CHUNG", position: "FOUNDER - CHAIRMAN" },
-    { name: "NGUYỄN VĂN TUẤN", position: "CO-FOUNDER – VICE CHAIRMAN" },
-    { name: "TRẦN NAM CHUNG", position: "FOUNDER - CHAIRMAN" },
-    { name: "NGUYỄN VĂN TUẤN", position: "CO-FOUNDER – VICE CHAIRMAN" },
-    { name: "TRẦN NAM CHUNG", position: "FOUNDER - CHAIRMAN" },
+    { name: "JohnB", position: "Product Owner" },
+    { name: "David", position: "CMO" },
+    { name: "Cris Nguyen", position: "Blockchain Leader" },
+    { name: "Satoshi Bui", position: "Solution Architecture" },
+    { name: "Andy Tran", position: "UI/UX Leader" },
+    { name: "Noblu", position: "dApp Developer" },
+    { name: "Thomas Nguyen", position: "Backend Developer" },
   ];
 
   const settings = {
@@ -27,42 +29,43 @@ const Team: React.FC = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
         },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1,
         },
       },
     ],
   };
 
   return (
-    <section className="mt-[70px] mb-[70px]">
-      <nav className="max-w-[1200px] mx-auto">
-        <h1 className="text-[#270017] clash text-[40px] font-semibold mb-16 uppercase">
+    <section className="mt-[40px] lg:mt-[70px] mg-[30px] lg:mb-[70px]">
+      <div className="max-w-[1200px] mx-auto">
+        <h1 className="text-[#270017] clash lg:text-[40px] text-[28px] font-semibold mb-10 lg:mb-16 uppercase">
           {t("team")}
         </h1>
         <Slider {...settings}>
           {teamMembers.map((member, index) => (
-            <div key={index}>
-              <img className="mb-6" src="/Img/Frame 3213.png" alt="" />
-              <h2 className="text-[#32021E] text-left font-bold text-[18px]">
-                {member.name}
-              </h2>
-              <h3 className="text-ec-purple-700 text-left font-normal">
-                {member.position}
-              </h3>
+            <div key={index} className="slick-slide flex justify-center">
+              <div className="team-member text-center">
+                <img
+                  className="mb-6 mx-auto"
+                  src="/Img/Frame 3213.png"
+                  alt=""
+                />
+                <h2 className="text-[#32021E] font-bold text-[18px]">
+                  {member.name}
+                </h2>
+                <h3 className="text-ec-purple-700 uppercase font-normal">
+                  {member.position}
+                </h3>
+              </div>
             </div>
           ))}
         </Slider>
-      </nav>
+      </div>
     </section>
   );
 };

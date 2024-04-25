@@ -14,13 +14,6 @@ const Footer: React.FC = () => {
     }
   }, []);
 
-  const toggleLanguage = () => {
-    const newLanguage = language === "en" ? "vi" : "en";
-    i18n.changeLanguage(newLanguage);
-    localStorage.setItem("language", newLanguage);
-    setLanguage(newLanguage);
-  };
-
   const [language, setLanguage] = useState("en");
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -35,11 +28,11 @@ const Footer: React.FC = () => {
     localStorage.setItem("language", lang);
   };
   return (
-    <footer className="bg-footer bg-no-repeat bg-cover animate-fadeInDown py-12 manrope">
-      <section className="max-w-[1200px] p-4 mx-auto flex justify-between text-white ">
-        <nav className="">
-          <img className="mb-5" src="../svg/Group 3.svg" alt="" />
-          <div className="flex space-x-5 mb-5 mt-10">
+    <footer className="bg-footer bg-no-repeat bg-cover animate-fadeInDown py-6 lg:py-12 manrope">
+      <section className="max-w-[1200px] p-4 mx-auto flex lg:flex-row flex-wrap justify-center gap-2 lg:justify-between text-white ">
+        <nav className="flex flex-col items-center">
+          <img className="lg:mb-5 mb-4 " src="../svg/Group 3.svg" alt="" />
+          <div className="flex space-x-5 lg:mb-5 lg:mt-10">
             <a
               href="https://www.youtube.com/@Hyperaschain"
               target="_blank"
@@ -73,20 +66,6 @@ const Footer: React.FC = () => {
                 alt=""
               />
             </a>
-            {/* <a href="/">
-              <img
-                style={{ fontSize: "24px" }}
-                src="./Img/Discord.png"
-                alt=""
-              />
-            </a> */}
-            {/* <a href="/">
-              <img
-                style={{ fontSize: "24px" }}
-                src="./Img/Group 4 (1).png"
-                alt=""
-              />
-            </a> */}
             <a
               href="https://t.me/hyperaschaingroup"
               target="_blank"
@@ -99,17 +78,17 @@ const Footer: React.FC = () => {
               />
             </a>
           </div>
-          <p className="text-ec-purple-700 text-[14px] mt-10 font-normal">
-            © 2024 Hyperaschain.com. All rights reserved.
+          <p className="text-ec-purple-700 text-[14px] mt-10 font-normal hidden md:block">
+            © 2024 Hyperaschain.com. All rights reserved.
           </p>
         </nav>
-        <div className="flex gap-10">
-          <nav className="flex gap-16">
+        <div className="mt-8 lg:mt-0 px-2">
+          <nav className="flex gap-5 lg:gap-16 px-2">
             <div className="text-left">
-              <h2 className="text-[1rem] text-[#270017] uppercase font-semibold">
+              <h2 className="text-[12px] lg:text-[1rem]  text-[#270017] uppercase font-semibold">
                 {t("developers")}
               </h2>
-              <ul className="flex flex-col  text-ec-purple-700 text-[14px] gap-4 mt-3">
+              <ul className="flex flex-col  text-ec-purple-700 text-[12px] lg:text-[14px] gap-4 mt-3">
                 <a className="" href="/">
                   <li>Get Started</li>
                 </a>
@@ -131,10 +110,10 @@ const Footer: React.FC = () => {
               </ul>
             </div>
             <div className="text-left ml-4">
-              <h2 className="text-[1rem] text-[#270017] uppercase font-semibold">
+              <h2 className="text-[12px] lg:text-[1rem]  text-[#270017] uppercase font-semibold">
                 {t("applications")}
               </h2>
-              <ul className="flex flex-col  text-ec-purple-700 text-[14px] gap-4 mt-3">
+              <ul className="flex flex-col  text-ec-purple-700 text-[12px] lg:text-[14px] gap-4 mt-3">
                 <a href="https://salala.io/" target="_blank" rel="noreferrer">
                   <li>Salala</li>
                 </a>
@@ -189,7 +168,7 @@ const Footer: React.FC = () => {
               </ul>
             </div>
             <div className="text-left ml-4">
-              <h2 className="text-[1rem] text-[#270017] uppercase font-semibold">
+              <h2 className="text-[12px] lg:text-[1rem]  text-[#270017] uppercase font-semibold">
                 {t("Community")}
               </h2>
               <ul className="flex flex-col  text-ec-purple-700 text-[14px] gap-4 mt-3">
@@ -217,7 +196,7 @@ const Footer: React.FC = () => {
                 </a>
               </ul>
             </div>
-            <div className="">
+            <div className="hidden lg:block">
               <div className="flex gap-1 relative">
                 <img src="./svg/globe.svg" alt="" />
                 <button
@@ -250,6 +229,43 @@ const Footer: React.FC = () => {
               </div>
             </div>
           </nav>
+          <div className="lg:hidden lg:block">
+            <div className="flex flex-col justify-center items-center mt-5">
+              <div className="flex gap-1 relative">
+                <img src="./svg/globe.svg" alt="" />
+                <button
+                  className="language-switcher text-black"
+                  onClick={toggleDropdown}
+                >
+                  {language === "en"
+                    ? "En"
+                    : language === "vi"
+                    ? "Vi"
+                    : "日本語"}
+                </button>
+                <img src="./svg/direction-down 01.svg" alt="" />
+                {dropdownOpen && (
+                  <div className="absolute mt-7 w-24  bg-white border rounded-lg shadow-lg z-10">
+                    <button
+                      className="block w-full text-left px-4 py-2 text-sm text-gray-800 hover:bg-gray-200"
+                      onClick={() => selectLanguage("en")}
+                    >
+                      English
+                    </button>
+                    <button
+                      className="block w-full text-left px-4 py-2 text-sm text-gray-800 hover:bg-gray-200"
+                      onClick={() => selectLanguage("vi")}
+                    >
+                      Việt Nam
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
+            <p className="text-ec-purple-700 text-[14px] mt-5 font-normal">
+              © 2024 Hyperaschain.com. All rights reserved.
+            </p>
+          </div>
         </div>
       </section>
     </footer>

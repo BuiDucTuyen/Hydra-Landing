@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 const Backer: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <section className="bg-[#D4F3FF] py-16 mt-[50px] animate-fadeInDown">
+    <section className="bg-[#D4F3FF] py-8 lg:py-16 lg:mt-[50px] animate-fadeInDown">
       <nav className=" mx-auto">
         <h1 className="text-[#270017] clash lg:text-[40px]  text-[28px] font-semibold mb-4 uppercase">
           {t("Backers")}

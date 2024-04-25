@@ -4,16 +4,16 @@ import { useTranslation } from "react-i18next";
 const Logo = () => {
   const { t } = useTranslation();
   return (
-    <div className="bg-chain bg-no-repeat bg-contain animate-fadeInDown mt-[-100px]">
-      <div className="flex container mx-auto mb-10 animate-fadeInDown ">
-        <div className="gap-5 p-4 overflow-x-hidden">
-          <h1 className="text-[#270017] 2xl:text-[32px] lg:text-[24px] text-[20px] xl:mb-16 mt-[64px] mb-5 clash font-semibold px-5 text-center">
+    <div className="bg-chain bg-no-repeat bg-contain animate-fadeInDown xl:mt-[-100px]">
+      <div className="flex container mx-auto lg:mb-10 animate-fadeInDown ">
+        <div className="gap-5 p-2 overflow-x-hidden">
+          <h1 className="text-[#270017] 2xl:text-[40px] text-[24px]  xl:mb-16 mt-[64px] mb-5 clash font-semibold px-5 text-center">
             {t("The")}
             <span className="text-[#EC008C]"> {t("innovative")}</span>
             <br />
             {t("build")}
           </h1>
-          <div className="flex gap-10 p-4 mb-16 overflow-x-hidden select-none">
+          <div className="flex gap-10 p-4 mb-4 lg:mb-16 overflow-x-hidden select-none">
             <div className="marquee-container flex flex-row gap-20">
               <ul className="flex flex-row min-w-full run flex-shrink-0 content-around items-center gap-32 md:animate-marqueeScroll">
                 {renderLogo(
@@ -30,13 +30,7 @@ const Logo = () => {
                   64,
                   "https://pindias.com/"
                 )}
-                {renderLogo(
-                  "Armory",
-                  "../svg/Group (1).svg",
-                  220,
-                  64,
-                  "https://docs.hyperaschain.com/technology/architecture"
-                )}
+                {renderLogo("Armory", "../svg/Group (1).svg", 220, 64, "/")}
                 {renderLogo(
                   "Armory",
                   "../svg/Frame.svg",
@@ -58,13 +52,7 @@ const Logo = () => {
                   60,
                   "https://salala.io/"
                 )}
-                {renderLogo(
-                  "Armory",
-                  "../svg/Group (1).svg",
-                  220,
-                  64,
-                  "https://salala.io/"
-                )}
+                {renderLogo("Armory", "../svg/Group (1).svg", 220, 64, "/")}
                 {renderLogo(
                   "Armory",
                   "../svg/Group.svg",

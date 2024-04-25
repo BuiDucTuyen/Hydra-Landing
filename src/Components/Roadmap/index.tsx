@@ -5,13 +5,13 @@ const RoadMap = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-roadmap bg-cover bg-no-repeat mb-[72px] animate-fadeInDown manrope">
+    <div className=" mb-[72px] bg-roadmap bg-cover bg-no-repeat animate-fadeInDown manrope">
       <section className="container mx-auto  ">
-        <h1 className="text-[#270017] text-[40px] clash font-semibold uppercase text-center mt-[72px]">
+        <h1 className="text-[#270017] lg:text-[40px] text-[28px] clash font-semibold uppercase text-center mt-[20px] lg:mt-[72px]">
           {t("roadmap")}
         </h1>
         <React.Fragment>
-          <div className="mt-[60px] hidden  lg:grid grid-cols-6 roadmap">
+          <div className="mt-[60px] hidden lg:grid grid-cols-6 roadmap">
             <div className="relative border-r border-left border-solid border-[#EC008C]  h-[270px]">
               <div className="aura active">
                 <div className="core"></div>
@@ -155,152 +155,109 @@ const RoadMap = () => {
           </div>
 
           {/* mobile */}
-          <div className="lg:hidden mt-[60px] relative">
-            {/* Q1-2022 */}
-            <div className="vertical-line"></div>
-            <div className="grid grid-cols-2 gap-x-[32px] py-[32px] bottom-line relative roadmap-vertical">
-              <div className="aura active current bottom-[-16px] flex justify-center items-center left-1/2 -translate-x-1/2">
-                <div className="core"></div>
-              </div>
-              <div className="grid place-items-center">
+          <div className="lg:hidden bg-roadmap bg-center  bg-no-repeat  mt-[60px] px-6 relative">
+            <div className="border-l-4 border-gradient-to-r from-transparent to-ffc5e7 via-fb89cc to-0094b0 px-2">
+              <div className="text-left px-4 mb-10 relative">
                 <img
                   src="./Img/cham.png"
                   alt=""
-                  className="object-contain w-8 h-8"
+                  className="absolute left-[-32px] top-[10px] w-11 h-11"
                 />
+                <p className="text-[#006D82] ml-2 uppercase text-[16px] mb-1 font-semibold gap-2">
+                  {t("Phase 1")}
+                </p>
+                <div className="bg-roadmap3 bg-cover ml-2 px-6 py-4">
+                  <h5 className="text-[#32021E] font-bold  text-lg ">
+                    {t("QQ4-2021")}
+                  </h5>
+                  <ul className="list-disc px-6 flex flex-col gap-2 text-sm mt-2 text-rgba-50230">
+                    <li> {t("Research ")}</li>
+                    <li> {t("detailedd")}</li>
+                    <li>{t("Recruitt")}</li>
+                  </ul>
+                </div>
               </div>
-
-              <div className="platform-content lg:text-lg text-base  text-start">
-                <h5 className="milestone lg:text-lg text-base">
-                  {t("what-chain.item6.title3")} Q4-2021
-                </h5>
-                <ul className="list-disc pl-6 text-sm mt-2 ">
-                  <li>{t("what-chain.item6.text3-1")}</li>
-                  <li>{t("what-chain.item6.text3-2")}</li>
-                  <li>{t("what-chain.item6.text3-3")}</li>
-                  <li>{t("what-chain.item6.text3-4")}</li>
-                </ul>
-              </div>
-            </div>
-            {/* Q2-2022 */}
-            <div className="grid grid-cols-2 gap-x-[32px] py-[32px] bottom-line relative roadmap-vertical">
-              <div className="aura active bottom-[-16px] left-1/2 -translate-x-1/2">
-                <div className="core"></div>
-              </div>
-              <div className="platform-content lg:text-lg text-base text-end">
-                <h5 className="milestone-testnet lg:text-lg text-base">
-                  {t("what-chain.item6.title1")} Q2-2022
-                </h5>
-                <ul className="list-disc pl-6 text-sm mt-2 ">
-                  <li>{t("what-chain.item6.text1-1")}</li>
-                  <li>{t("what-chain.item6.text1-2")}</li>
-                  <li>{t("what-chain.item6.text1-3")}</li>
-                </ul>
-              </div>
-              <div className="grid place-items-center">
+              <div className="text-left px-4 mb-10 relative">
                 <img
                   src="./Img/cham.png"
                   alt=""
-                  className="object-contain w-full h-full"
+                  className="absolute left-[-32px] top-[10px] w-11 h-11"
                 />
+                <p className="text-[#006D82] ml-2 uppercase text-[16px] mb-1 font-semibold gap-2">
+                  {t("Phase 2")}
+                </p>
+                <div className="bg-roadmap3 bg-cover ml-2 px-6 py-4">
+                  <h5 className="text-[#32021E] font-bold  text-lg ">
+                    {t("Q2 2023")}
+                  </h5>
+                  <ul className="list-disc px-6 flex flex-col gap-2 text-sm mt-2 text-rgba-50230">
+                    <li> {t("dev")}</li>
+                    <li> {t("public")}</li>
+                    <li> {t("Collect")}</li>
+                    <li> {t("Omnichain")}</li>
+                    <li> {t("Hackathon")}</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            {/* Q1 */}
-            <div className="grid grid-cols-2 gap-x-[32px] py-[32px] bottom-line relative roadmap-vertical">
-              <div className="aura active bottom-[-16px] left-1/2 -translate-x-1/2">
-                <div className="core"></div>
-              </div>
-              <div className="grid place-items-center">
+              <div className="text-left px-4 mb-10 relative">
                 <img
                   src="./Img/cham.png"
                   alt=""
-                  className="object-contain w-full h-full"
+                  className="absolute left-[-32px] top-[10px] w-11 h-11"
                 />
+                <p className="text-[#006D82] ml-2 uppercase text-[16px] mb-1 font-semibold gap-2">
+                  {t("Phase 3")}
+                </p>
+                <div className="bg-roadmap3 ml-2 px-6 py-4">
+                  <h5 className="text-[#32021E] font-bold  text-lg ">
+                    {t("Q3 2023")}
+                  </h5>
+                  <ul className="list-disc px-6 flex flex-col gap-2 text-sm mt-2 text-rgba-50230">
+                    <li>{t("early")}</li>
+                    <li>{t("and")}</li>
+                    <li>{t("partners")}</li>
+                  </ul>
+                </div>
               </div>
-              <div className="platform-content lg:text-lg text-base  text-start">
-                <h5 className="milestone lg:text-lg text-base">
-                  {t("what-chain.item6.title4")} Q1-2024
-                </h5>
-                <ul className="list-disc pl-6 text-sm mt-2 ">
-                  <li>{t("what-chain.item6.text4-1")}</li>
-                  <li>{t("what-chain.item6.text4-2")}</li>
-                  <li>{t("what-chain.item6.text4-3")}</li>
-                  <li>{t("what-chain.item6.text4-4")}</li>
-                  <li>{t("what-chain.item6.text4-5")}</li>
-                  <li>{t("what-chain.item6.text4-6")}</li>
-                  <li>{t("what-chain.item6.text4-7")}</li>
-                  <li>{t("what-chain.item6.text4-8")}</li>
-                </ul>
-              </div>
-            </div>
-            {/* Q2 */}
-            <div className="grid grid-cols-2 gap-x-[32px] py-[32px] bottom-line-blue relative">
-              <div className="aura  bottom-[-16px] left-1/2 -translate-x-1/2">
-                <div className="core"></div>
-              </div>
-              <div className="platform-content lg:text-lg text-base  text-end">
-                <h5 className="milestone-testnet lg:text-lg text-base ">
-                  Test net Q2 2023
-                </h5>
-                <ul className="list-disc pl-6 text-sm mt-2 ">
-                  <li>{t("what-chain.item6.text2-1")}</li>
-                  <li>{t("what-chain.item6.text2-2")}</li>
-                  <li>{t("what-chain.item6.text2-3")}</li>
-                </ul>
-              </div>
-              <div className="grid place-items-center">
+              <div className="text-left px-4 mb-10 relative">
                 <img
                   src="./Img/cham.png"
                   alt=""
-                  className="object-contain w-full h-full"
+                  className="absolute left-[-32px] top-[10px] w-11 h-11"
                 />
+                <p className="text-[#006D82] ml-2 uppercase text-[16px] mb-1 font-semibold gap-2">
+                  {t("Phase 4")}
+                </p>
+                <div className="bg-roadmap4 ml-2 px-6 py-4">
+                  <h5 className="text-[#32021E] font-bold  text-lg ">
+                    {t("Q2-2022")}
+                  </h5>
+                  <ul className="list-disc px-6 flex flex-col gap-2 text-sm mt-2 text-rgba-50230">
+                    <li> {t("Develop")}</li>
+                    <li>{t("Build ecosytem")}</li>
+                    <li>{t("Test")}</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            {/* Q3 */}
-            <div className="grid grid-cols-2 gap-x-[32px] py-[32px]">
-              <div className="grid place-items-center">
+              <div className="text-left px-4 mb-10 relative">
                 <img
                   src="./Img/cham.png"
                   alt=""
-                  className="object-contain w-full h-full"
+                  className="absolute left-[-32px] top-[10px] w-11 h-11"
                 />
-              </div>
-              <div className="platform-content lg:text-lg text-base  text-start">
-                <h5 className="milestone lg:text-lg text-base">
-                  {t("what-chain.item6.title5")} Q3 2024
-                </h5>
-                <ul className="list-disc pl-6 text-sm mt-2 ">
-                  <li>{t("what-chain.item6.text5-1")}</li>
-                  <li>{t("what-chain.item6.text5-2")}</li>
-                  <li>{t("what-chain.item6.text5-3")}</li>
-                  <li>{t("what-chain.item6.text5-4")}</li>
-                  <li>{t("what-chain.item6.text5-5")}</li>
-                  <li>{t("what-chain.item6.text5-6")}</li>
-                  <li>{t("what-chain.item6.text5-7")}</li>
-                </ul>
-              </div>
-            </div>
-            {/* Q4 */}
-            <div className="grid grid-cols-2 gap-x-[32px] py-[32px] top-line-blue relative">
-              <div className="aura left-1/2 -translate-x-1/2">
-                <div className="core"></div>
-              </div>
-              <div className="platform-content lg:text-lg text-base text-white text-end">
-                <h5 className="milestone-testnet lg:text-lg text-base ">
-                  {t("what-chain.item6.title2")} Q4 2024
-                </h5>
-                <ul className="list-disc pl-6 text-sm mt-2 ">
-                  <li>{t("what-chain.item6.text2-1")}</li>
-                  <li>{t("what-chain.item6.text2-2")}</li>
-                  <li>{t("what-chain.item6.text2-3")}</li>
-                </ul>
-              </div>
-              <div className="grid place-items-center">
-                <img
-                  src="./Img/cham.png"
-                  alt=""
-                  className="object-contain w-full h-full"
-                />
+                <p className="text-[#006D82] ml-2 uppercase text-[16px] mb-1 font-semibold gap-2">
+                  {t("Phase 5")}
+                </p>
+                <div className="bg-roadmap4 ml-2 px-6 py-4 ">
+                  <h5 className="text-[#32021E] font-bold  text-lg ">
+                    {t("Mainnet")}
+                  </h5>
+                  <ul className="list-disc px-6 flex flex-col gap-2 text-sm mt-2 text-rgba-50230">
+                    <li> {t("Mainet")}</li>
+                    <li> {t("expansion")}</li>
+                    <li>{t("platform")}</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
