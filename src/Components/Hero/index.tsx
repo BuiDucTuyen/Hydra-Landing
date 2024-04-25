@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
             </button>
           </div>
         </div>
-        <div className="bg-hero1 bg-cover pr-32">
+        <div className="bg-hero1 bg-right-bottom bg-no-repeat pr-32">
           {/* <img className="w-[760px]" src="../Img/video-unscreen.gif" alt="" /> */}
           <iframe
             src="https://my.spline.design/youarefightingeveryday-c2e9cd6a150cf5fb10aa974c5b8785a9/"
