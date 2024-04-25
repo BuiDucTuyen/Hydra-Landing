@@ -5,7 +5,7 @@ const RoadMap = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-roadmap bg-center bg-no-repeat mb-[72px] animate-fadeInDown manrope">
+    <div className="bg-roadmap bg-cover bg-no-repeat mb-[72px] animate-fadeInDown manrope">
       <section className="container mx-auto  ">
         <h1 className="text-[#270017] text-[40px] clash font-semibold uppercase text-center mt-[72px]">
           {t("roadmap")}

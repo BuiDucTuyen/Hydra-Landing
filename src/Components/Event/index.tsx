@@ -11,7 +11,7 @@ const Event: React.FC = () => {
           <div className="flex justify-center items-center gap-5">
             <a
               href="/"
-              className="flex gap-2 text-[16px] uppercase text-white items-center"
+              className="flex gap-2 lg:text-[16px] text-[10px] uppercase text-white items-center"
             >
               {t("Event")}
               <AiOutlineArrowRight />

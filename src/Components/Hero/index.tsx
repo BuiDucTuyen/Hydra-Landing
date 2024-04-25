@@ -7,8 +7,8 @@ const Hero: React.FC = () => {
   return (
     <section className="animate-fadeInDown py-20">
       <nav className=" max-w-[1920px] flex justify-between mx-auto ">
-        <div className="ml-[200px] max-w-[1000px]">
-          <h1 className="text-[80px] text-left mb-8 clash text-[#270017] font-semibold  ">
+        <div className="ml-[320px] mr-[-50px] max-w-[1000px]">
+          <h1 className="text-[80px]  text-left mb-8 clash text-[#270017] font-semibold  ">
             BLOCKCHAIN ft. AI WITHOUT
             <span className="text-[#EC008C]"> LIMITS</span>{" "}
           </h1>

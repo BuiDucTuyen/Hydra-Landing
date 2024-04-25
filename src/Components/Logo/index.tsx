@@ -7,7 +7,7 @@ const Logo = () => {
     <div className="bg-chain bg-no-repeat bg-contain animate-fadeInDown mt-[-100px]">
       <div className="flex container mx-auto mb-10 animate-fadeInDown ">
         <div className="gap-5 p-4 overflow-x-hidden">
-          <h1 className="text-[#270017] text-[32px] mb-16 mt-[64px] clash font-semibold px-5 text-center">
+          <h1 className="text-[#270017] 2xl:text-[32px] lg:text-[24px] text-[20px] xl:mb-16 mt-[64px] mb-5 clash font-semibold px-5 text-center">
             {t("The")}
             <span className="text-[#EC008C]"> {t("innovative")}</span>
             <br />
