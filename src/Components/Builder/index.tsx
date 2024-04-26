@@ -21,13 +21,13 @@ const Build: React.FC = () => {
           alt=""
         />
       </nav>
-      <nav className="max-w-[1200px] p-2 mx-auto mt-[20px] mb-[20px] lg:mt-[48px] lg:mb-[80px]">
+      <nav className="max-w-[1200px] px-4 mx-auto mt-[20px] mb-[20px] lg:mt-[48px] lg:mb-[80px]">
         <img
           className="hidden md:block w-full"
           src="./Img/Demo (1).png"
           alt=""
         />
-        <img className="md:hidden w-full" src="../svg/Demo.png" alt="" />
+        <img className="md:hidden w-full" src="../svg/Demo (1).png" alt="" />
       </nav>
     </section>
   );

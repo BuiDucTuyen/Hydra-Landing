@@ -14,17 +14,40 @@ const Tokennomic: React.FC = () => {
               {t("Tokenomic")}
             </h1>
           </div>
-          <div className="max-w-[450px] text-ec-purple-700 text-left text-[16px] font-normal">
+          <div className="max-w-[450px] text-ec-purple-700 text-center text-[16px] font-normal">
             {t("Token")}
           </div>
         </div>
       </div>
       <div className="bg-token bg-contain p-6 ">
         <img
-          className="mx-auto w-full max-w-[1132px] h-auto"
+          className="mx-auto hidden sm:block w-full max-w-[1132px] h-auto"
           src="./Img/Object.png"
           alt=""
         />
+        <div className="flex block sm:hidden flex-col justify-center items-center gap-2">
+          <nav className="flex gap-2">
+            <img src="./svg/Frame 3186.svg" alt="" />
+            <img src="./svg/Frame 3193.svg" alt="" />
+          </nav>
+          <nav className="flex gap-2 ">
+            <img src="./svg/Frame 3187.svg" alt="" />
+            <img src="./svg/Frame 3190.svg" alt="" />
+          </nav>
+          <nav className="flex gap-2">
+            <img src="./svg/Frame 3191.svg" alt="" />
+            <img src="./svg/Frame 3189.svg" alt="" />
+          </nav>
+          <nav>
+            <img src="./svg/Frame 3188.svg" alt="" />
+          </nav>
+          <nav>
+            <img src="./svg/Frame 3192.svg" alt="" />
+          </nav>
+          <nav className="mt-[30px]">
+            <img src="./svg/Frame 3181.png" alt="" />
+          </nav>
+        </div>
       </div>
     </section>
   );
