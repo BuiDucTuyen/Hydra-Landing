@@ -5,8 +5,8 @@ const RoadMap = () => {
   const { t } = useTranslation();
 
   return (
-    <div className=" mb-[72px] bg-roadmap bg-cover bg-no-repeat animate-fadeInDown manrope">
-      <section className="container mx-auto  ">
+    <div className=" mb-[72px] bg-roadmap bg-top bg-no-repeat animate-fadeInDown manrope">
+      <section className="container mx-auto ">
         <h1 className="text-[#270017] lg:text-[40px] text-[28px] clash font-semibold uppercase text-center mt-[20px] lg:mt-[72px]">
           {t("roadmap")}
         </h1>
@@ -52,11 +52,12 @@ const RoadMap = () => {
                   <li> {t("Develop")}</li>
                   <li>{t("Build ecosytem")}</li>
                   <li>{t("Test")}</li>
+                  <li>{t("textt")}</li>
                 </ul>
               </div>
             </div>
             {/* Q2-2024 */}
-            <div className="col-span-2 relative bg-roadmap2 bg-no-repeat">
+            <div className="col-span-2 relative bg-roadmap1 bg-no-repeat">
               <div className="platform-content  text-start absolute top-0 left-5">
                 <h5 className="text-[#32021E] font-bold  text-lg mt-5">
                   {t("Q2 2023")}
@@ -72,7 +73,7 @@ const RoadMap = () => {
             </div>
 
             {/* 3 */}
-            <div className="col-span-2 border-l border-[#FF4581] bg-roadmap2 bg-no-repeat relative h-[230px] ">
+            <div className="col-span-2 border-l border-[#FF4581] bg-roadmap2 bg-no-repeat relative h-[290px] ">
               <div className="aura active current">
                 <div className="core"></div>
               </div>
@@ -155,7 +156,7 @@ const RoadMap = () => {
           </div>
 
           {/* mobile */}
-          <div className="lg:hidden bg-roadmap bg-center  bg-no-repeat  mt-[60px] px-6 relative">
+          <div className="lg:hidden bg-roadmap bg-cover  bg-no-repeat  mt-[60px] px-6 relative">
             <div className="border-l-4 border-gradient-to-r from-transparent to-ffc5e7 via-fb89cc to-0094b0 px-2">
               <div className="text-left px-4 mb-10 relative">
                 <img
@@ -188,14 +189,13 @@ const RoadMap = () => {
                 </p>
                 <div className="bg-roadmap3 bg-cover ml-2 px-6 py-4">
                   <h5 className="text-[#32021E] font-bold  text-lg ">
-                    {t("Q2 2023")}
+                    {t("Q2-2022")}
                   </h5>
                   <ul className="list-disc px-6 flex flex-col gap-2 text-sm mt-2 text-rgba-50230">
-                    <li> {t("dev")}</li>
-                    <li> {t("public")}</li>
-                    <li> {t("Collect")}</li>
-                    <li> {t("Omnichain")}</li>
-                    <li> {t("Hackathon")}</li>
+                    <li> {t("Develop")}</li>
+                    <li>{t("Build ecosytem")}</li>
+                    <li>{t("Test")}</li>
+                    <li>{t("textt")}</li>
                   </ul>
                 </div>
               </div>
@@ -230,12 +230,14 @@ const RoadMap = () => {
                 </p>
                 <div className="bg-roadmap4 ml-2 px-6 py-4">
                   <h5 className="text-[#32021E] font-bold  text-lg ">
-                    {t("Q2-2022")}
+                    {t("Q2 2023")}
                   </h5>
                   <ul className="list-disc px-6 flex flex-col gap-2 text-sm mt-2 text-rgba-50230">
-                    <li> {t("Develop")}</li>
-                    <li>{t("Build ecosytem")}</li>
-                    <li>{t("Test")}</li>
+                    <li> {t("dev")}</li>
+                    <li> {t("public")}</li>
+                    <li> {t("Collect")}</li>
+                    <li> {t("Omnichain")}</li>
+                    <li> {t("Hackathon")}</li>
                   </ul>
                 </div>
               </div>

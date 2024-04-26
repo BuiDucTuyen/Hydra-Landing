@@ -19,7 +19,7 @@ const Tokennomic: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="bg-token bg-contain p-6 ">
+      <div className="bg-token bg-no-repeat bg-cover p-6 ">
         <img
           className="mx-auto hidden sm:block w-full max-w-[1132px] h-auto"
           src="./Img/Object.png"

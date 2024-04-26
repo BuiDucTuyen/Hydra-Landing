@@ -55,9 +55,7 @@ code {
 
 *,
 /* CSS */
-.logo-container {
-  position: relative;
-}
+
 
 .logo-image {
   transition: border 0.3s ease;
@@ -65,7 +63,8 @@ code {
 
 .logo-container:hover .logo-image {
   border: 2px solid #a08888;
-
+  border-radius: 5px;
+  
 }
 body,
 select {

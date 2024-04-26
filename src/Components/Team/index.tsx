@@ -41,14 +41,14 @@ const Team: React.FC = () => {
   };
 
   return (
-    <section className="mt-[40px] lg:mt-[70px] mg-[30px] lg:mb-[70px]">
+    <section className="mt-[40px] lg:mt-[70px]  lg:mb-[70px]">
       <div className="max-w-[1200px] mx-auto">
         <h1 className="text-[#270017] clash lg:text-[40px] text-[28px] font-semibold mb-10 lg:mb-16 uppercase">
           {t("team")}
         </h1>
         <Slider {...settings}>
           {teamMembers.map((member, index) => (
-            <div key={index} className="slick-slide flex justify-center">
+            <div key={index} className="slick-slide flex gap-2 justify-center">
               <div className="team-member text-center">
                 <img
                   className="mb-6 mx-auto"

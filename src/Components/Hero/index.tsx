@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
             alt=""
           />
           <img
-            className="absolute lg:w-28 w-24 top-10 left-20 xl:top-[80px] xl:left-[240px] animate-bounce "
+            className="absolute lg:w-28 w-24 top-10 left-20 xl:top-[80px] xl:left-[240px] animate-bouncee "
             src="../svg/1 61.svg"
             alt=""
           />

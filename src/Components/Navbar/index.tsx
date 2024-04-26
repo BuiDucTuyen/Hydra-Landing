@@ -8,6 +8,7 @@ const Navbar: React.FC = () => {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
   const { t } = useTranslation();
   const explore: MenuProps["items"] = [
     {
@@ -259,7 +260,7 @@ const Navbar: React.FC = () => {
             className="navbar-backdrop fixed inset-0 bg-neutral-950 opacity-25"
             onClick={toggleMenu}
           ></div>
-          <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-blue-50 border-r overflow-y-auto">
+          <nav className="fixed top-0 right-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-blue-50 border-r overflow-y-auto">
             <div className="flex justify-between items-center mb-4">
               <img src="../svg/Group 1.svg" alt="" />
               <button className="navbar-close" onClick={toggleMenu}>

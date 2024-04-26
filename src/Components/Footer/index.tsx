@@ -30,9 +30,9 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-footer bg-no-repeat bg-cover animate-fadeInDown py-6 lg:py-12 manrope">
       <section className="max-w-[1200px] p-4 mx-auto flex lg:flex-row flex-wrap justify-center gap-2 lg:justify-between text-white ">
-        <nav className="flex flex-col items-center">
-          <img className="lg:mb-5 mb-4 " src="../svg/Group 3.svg" alt="" />
-          <div className="flex space-x-5 lg:mb-5 lg:mt-10">
+        <nav className="flex flex-col gap-5">
+          <img className="lg:mb-2  " src="../svg/Group 3.svg" alt="" />
+          <div className="flex space-x-5 lg:mb-4 lg:mt-2">
             <a
               href="https://www.youtube.com/@Hyperaschain"
               target="_blank"
@@ -78,7 +78,7 @@ const Footer: React.FC = () => {
               />
             </a>
           </div>
-          <p className="text-ec-purple-700 text-[14px] mt-10 font-normal hidden md:block">
+          <p className="text-ec-purple-700 text-[14px] text-left mt-4 font-normal hidden md:block">
             © 2024 Hyperaschain.com. All rights reserved.
           </p>
         </nav>
@@ -229,7 +229,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
           </nav>
-          <div className="lg:hidden lg:block">
+          <div className="lg:hidden block">
             <div className="flex flex-col justify-center items-center mt-5">
               <div className="flex gap-1 relative">
                 <img src="./svg/globe.svg" alt="" />

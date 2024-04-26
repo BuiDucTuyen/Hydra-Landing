@@ -107,12 +107,42 @@
   }
 
   50% {
-    transform: translateY(-250px);
+    transform: translateY(-100px);
   }
 }
 
 .animate-bounce {
-  animation: bounce 2s ease-in-out infinite;
+  animation: bounce 5s ease-in-out infinite;
+  /* Điều chỉnh thời gian của animation */
+}
+.menu-show {
+  transform: translateY(100%);
+  animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes bouncee{
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-150px);
+  }
+}
+
+.animate-bouncee {
+  animation: bounce 4s ease-in-out infinite;
   /* Điều chỉnh thời gian của animation */
 }
 

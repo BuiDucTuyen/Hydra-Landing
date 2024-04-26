@@ -142,7 +142,7 @@ const renderLogo = (
         width={width}
         height={height}
         src={src}
-        className="logo-image logo-container transition-opacity p-2 duration-300 ease-in-out "
+        className="logo-image  logo-container  transition-opacity p-2 duration-300 ease-in-out "
       />
     </a>
   </li>
