@@ -17,12 +17,22 @@ const Hero: React.FC = () => {
             {t("Hyperas")}
           </h2>
           <div className="lg:max-w-full flex gap-6 justify-center  xl:justify-start manrope">
-            <button className="bg-[#EC008C] w-32 font-medium h-12 px-5 py-2 gap-2 rounded-[4px] border border-solid border-[#EC008C] text-white text-[14px]">
+            <a
+              href="https://linktr.ee/hyperaschain"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#EC008C] w-32 font-medium h-12 px-5 py-2 gap-2 rounded-[4px] border border-solid border-[#EC008C] text-white text-[14px]"
+            >
               {t("Get")}
-            </button>
-            <button className="w-32 font-medium h-12 px-5 py-2 gap-2 rounded-[4px] border border-solid border-[#EC008C] text-[#EC008C] text-[14px]">
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://docs.hyperaschain.com/"
+              className="w-32 font-medium h-12 px-5 py-2 gap-2 rounded-[4px] border border-solid border-[#EC008C] text-[#EC008C] text-[14px]"
+            >
               {t("Read")}
-            </button>
+            </a>
           </div>
         </div>
         <div className="bg-hero1 xl:ml-[-350px] font bg-right-bottom relative bg-no-repeat ">

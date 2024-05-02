@@ -326,9 +326,14 @@ const Navbar: React.FC = () => {
             </Dropdown>
           </ul>
         </div>
-        <button className="w-32 hidden lg:block font-medium h-10 px-5 py-2 gap-2 rounded-[4px] border border-solid border-[#EC008C] text-[#EC008C] text-[14px]">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://linktr.ee/hyperaschain"
+          className="w-32 hidden lg:block font-medium h-10 px-5 py-2 gap-2 rounded-[4px] border border-solid border-[#EC008C] text-[#EC008C] text-[14px]"
+        >
           {t("Get")}
-        </button>
+        </a>
         <div className={`lg:hidden ${menuOpen ? "hidden" : ""}`}>
           <button
             className="navbar-burger flex items-center text-white p-3"
@@ -432,9 +437,14 @@ const Navbar: React.FC = () => {
                   <img src="../svg/direction-down 01.svg" alt="" />
                 </Space>
               </Dropdown>
-              <button className="w-32  font-medium h-10 px-5 py-2 gap-2 rounded-[4px] border border-solid border-[#EC008C] text-[#EC008C] text-[14px]">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://linktr.ee/hyperaschain"
+                className="w-32  font-medium h-10 px-5 py-2 gap-2 rounded-[4px] border border-solid border-[#EC008C] text-[#EC008C] text-[14px]"
+              >
                 {t("Get")}
-              </button>
+              </a>
             </ul>
           </nav>
         </div>

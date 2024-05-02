@@ -124,17 +124,26 @@ const Footer: React.FC = () => {
                 {t("developers")}
               </h2>
               <ul className="flex flex-col  text-ec-purple-700 text-[12px] lg:text-[14px] gap-4 mt-3">
-                <li>Get Started</li>
-                {/* <a className="hover:text-slate-400" href="/">
-                  <li>Get Started</li>
-                </a> */}
+                {/* <li>Get Started</li> */}
                 <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-slate-400"
+                  href="https://linktr.ee/hyperaschain"
+                >
+                  <li>Get Started</li>
+                </a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-slate-400"
                   href="https://docs.hyperaschain.com/developers"
                 >
                   <li>Hyperas Program</li>
                 </a>
                 <a
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-slate-400"
                   href="https://www.youtube.com/@Hyperaschain"
                 >
@@ -145,12 +154,16 @@ const Footer: React.FC = () => {
                 </a> */}
                 <li>Documentation</li>
                 <a
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-slate-400"
                   href="https://www.hyperaschain.com/news"
                 >
                   <li>Blog</li>
                 </a>
                 <a
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-slate-400"
                   href="https://t.me/hyperaschaingroup"
                 >
