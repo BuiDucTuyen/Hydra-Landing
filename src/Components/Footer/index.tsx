@@ -124,36 +124,50 @@ const Footer: React.FC = () => {
                 {t("developers")}
               </h2>
               <ul className="flex flex-col  text-ec-purple-700 text-[12px] lg:text-[14px] gap-4 mt-3">
-                <a className="" href="/">
+                <a className="hover:text-slate-400" href="/">
                   <li>Get Started</li>
                 </a>
-                <a className="" href="https://docs.hyperaschain.com/developers">
+                <a
+                  className="hover:text-slate-400"
+                  href="https://docs.hyperaschain.com/developers"
+                >
                   <li>Hyperas Program</li>
                 </a>
-                <a className="" href="https://www.youtube.com/@Hyperaschain">
+                <a
+                  className="hover:text-slate-400"
+                  href="https://www.youtube.com/@Hyperaschain"
+                >
                   <li>Video Tutorials</li>
                 </a>
-                <a className="" href="/">
+                <a className="hover:text-slate-400" href="/">
                   <li>Documentation</li>
                 </a>
-                <a className="" href="https://www.hyperaschain.com/news">
+                <a
+                  className="hover:text-slate-400"
+                  href="https://www.hyperaschain.com/news"
+                >
                   <li>Blog</li>
                 </a>
-                <a className="" href="/">
+                <a className="hover:text-slate-400" href="/">
                   <li>Support</li>
                 </a>
               </ul>
             </div>
-            <div className="text-left ml-4">
+            <div className="text-left ml-4 ">
               <h2 className="text-[12px] lg:text-[1rem]  text-[#270017] uppercase font-semibold">
                 {t("applications")}
               </h2>
               <ul className="flex flex-col  text-ec-purple-700 text-[12px] lg:text-[14px] gap-4 mt-3">
-                <a href="https://salala.io/" target="_blank" rel="noreferrer">
+                <a
+                  className="hover:text-slate-400"
+                  href="https://salala.io/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <li>Salala</li>
                 </a>
                 <a
-                  className=""
+                  className="hover:text-slate-400"
                   target="_blank"
                   href="https://egabid.com/"
                   rel="noreferrer"
@@ -161,7 +175,7 @@ const Footer: React.FC = () => {
                   <li>Egabid</li>
                 </a>
                 <a
-                  className=""
+                  className="hover:text-slate-400"
                   target="_blank"
                   href="https://pindias.com/"
                   rel="noreferrer"
@@ -169,7 +183,7 @@ const Footer: React.FC = () => {
                   <li>Pindias</li>
                 </a>
                 <a
-                  className=""
+                  className="hover:text-slate-400"
                   target="_blank"
                   href="https://www.hyperaschain.com/stake"
                   rel="noreferrer"
@@ -177,7 +191,7 @@ const Footer: React.FC = () => {
                   <li>Staking</li>
                 </a>
                 <a
-                  className=""
+                  className="hover:text-slate-400"
                   target="_blank"
                   href="https://testnet.hyrascan.com/"
                   rel="noreferrer"
@@ -185,7 +199,7 @@ const Footer: React.FC = () => {
                   <li>Scan</li>
                 </a>
                 <a
-                  className=""
+                  className="hover:text-slate-400"
                   target="_blank"
                   href="https://www.hyperaschain.com/swap"
                   rel="noreferrer"
@@ -193,7 +207,7 @@ const Footer: React.FC = () => {
                   <li>Swap</li>
                 </a>
                 <a
-                  className=""
+                  className="hover:text-slate-400"
                   target="_blank"
                   href="https://www.hyperaschain.com/bridge"
                   rel="noreferrer"
@@ -208,7 +222,7 @@ const Footer: React.FC = () => {
               </h2>
               <ul className="flex flex-col  text-ec-purple-700 text-[14px] gap-4 mt-3">
                 <a
-                  className=""
+                  className="hover:text-slate-400"
                   target="_blank"
                   href="https://t.me/hyperaschaingroup"
                   rel="noreferrer"
@@ -216,17 +230,17 @@ const Footer: React.FC = () => {
                   <li>Hyperaschain group</li>
                 </a>
                 <a
-                  className=""
+                  className="hover:text-slate-400"
                   target="_blank"
                   href="https://t.me/hyperaschaingroup"
                   rel="noreferrer"
                 >
                   <li>Hyperaschain Vietnam</li>
                 </a>
-                <a className="" href="/">
+                <a className="hover:text-slate-400" href="/">
                   <li>Salala community</li>
                 </a>
-                <a className="" href="/">
+                <a className="hover:text-slate-400" href="/">
                   <li>Egabid community</li>
                 </a>
               </ul>
