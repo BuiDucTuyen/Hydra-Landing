@@ -432,7 +432,7 @@ const Navbar: React.FC = () => {
                   <img src="../svg/direction-down 01.svg" alt="" />
                 </Space>
               </Dropdown>
-              <button className="w-32 font-medium h-10 px-5 py-2 gap-2 rounded-[4px] border border-solid border-[#EC008C] text-[#EC008C] text-[14px]">
+              <button className="w-32  font-medium h-10 px-5 py-2 gap-2 rounded-[4px] border border-solid border-[#EC008C] text-[#EC008C] text-[14px]">
                 {t("Get")}
               </button>
             </ul>

@@ -806,3 +806,6 @@ input[type="number"] {
   cursor: pointer;
   
 }
+.ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item-active {
+  background-color: #F2EBEF !important;
+}
