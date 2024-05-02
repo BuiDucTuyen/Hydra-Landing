@@ -31,11 +31,11 @@ const Backer: React.FC = () => {
               alt=""
               className="w-40 h-auto  md:w-52 xl:w-72"
             />
-            <img
+            {/* <img
               src="./Img/Frame 3112.png"
               alt=""
               className="w-40 h-auto  md:w-52 xl:w-72"
-            />
+            /> */}
           </div>
         </div>
       </nav>

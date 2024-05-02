@@ -106,7 +106,7 @@ const renderLogo = (
         width={width}
         height={height}
         src={src}
-        className="logo-image py-2 px-4 rounded-[8px] logo-container  transition-opacity duration-300 ease-in-out "
+        className="logo-image py-2 px-4 rounded-[8px]  ease-in-out "
       />
     </a>
   </li>

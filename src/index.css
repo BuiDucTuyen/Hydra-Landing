@@ -57,15 +57,6 @@ code {
 /* CSS */
 
 
-.logo-image {
-  transition: border 0.3s ease;
-}
-
-.logo-container:hover .logo-image {
-  border: 2px solid #a08888;
-  border-radius: 5px;
-  
-}
 body,
 select {
   font-family: "Inter", sans-serif;
@@ -149,9 +140,8 @@ input[type="number"] {
 
 
 .logo-image:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(255, 105, 180, 0.2);
 
-  
 }
 .coinUtility .rightSide li::after {
   content: "";
