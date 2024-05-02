@@ -19,6 +19,7 @@ roadmap1: "url('../public/Img/Rectangle 701.png')",
 roadmap2: "url('../public/Img/Rectangle 698 (1).png')",
 roadmap3: "url('../public/svg/Rectangle 698.png')",
 roadmap4: "url('../public/svg/Rectangle 701.png')",
+roadmap5: "url('../public/Img/Teams.png')",
       },
       colors: {
  'ec-purple-700': 'rgba(39, 0, 23, 0.70)',

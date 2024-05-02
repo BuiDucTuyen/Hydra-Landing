@@ -5,9 +5,9 @@ const RoadMap = () => {
   const { t } = useTranslation();
 
   return (
-    <div className=" mb-[72px] bg-roadmap bg-top bg-no-repeat animate-fadeInDown manrope">
+    <div className=" mb-[72px]  bg-roadmap bg-top bg-no-repeat animate-fadeInDown manrope">
       <section className="container mx-auto ">
-        <h1 className="text-[#270017] lg:text-[40px] text-[28px] clash font-semibold uppercase text-center mt-[20px] lg:mt-[72px]">
+        <h1 className="text-[#270017] lg:block hidden lg:text-[40px] text-[28px] clash font-semibold uppercase text-center mt-[20px] lg:mt-[72px]">
           {t("roadmap")}
         </h1>
         <React.Fragment>
@@ -156,7 +156,10 @@ const RoadMap = () => {
           </div>
 
           {/* mobile */}
-          <div className="lg:hidden bg-roadmap bg-cover  bg-no-repeat  mt-[60px] px-6 relative">
+          <div className="lg:hidden bg-roadmap5 bg-center bg-no-repeat  px-6 relative">
+            <h1 className="text-[#270017] lg:text-[40px] text-[28px] clash font-semibold uppercase text-center pt-[32px] ">
+              {t("roadmap")}
+            </h1>
             <div className="border-l-4 border-gradient-to-r from-transparent to-ffc5e7 via-fb89cc to-0094b0 px-2">
               <div className="text-left px-4 mb-10 relative">
                 <img

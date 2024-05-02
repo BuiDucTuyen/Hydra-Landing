@@ -5,15 +5,15 @@ const Logo = () => {
   const { t } = useTranslation();
   return (
     <div className="bg-chain bg-no-repeat bg-contain animate-fadeInDown xl:mt-[-100px]">
-      <div className="flex container mx-auto lg:mb-10 animate-fadeInDown ">
+      <div className="flex container mx-auto  animate-fadeInDown ">
         <div className="gap-5 p-2 overflow-x-hidden">
-          <h1 className="text-[#270017] 2xl:text-[32px] text-[24px]  xl:mb-16 mt-[64px] mb-5 clash font-semibold px-5 text-center">
+          <h1 className="text-[#270017] 2xl:text-[32px] text-[24px] lg:mb-10 mt-[64px] mb-6 clash font-semibold px-5 text-center">
             {t("The")}
             <span className="text-[#EC008C]"> {t("innovative")}</span>
             <br />
             {t("build")}
           </h1>
-          <div className="flex gap-5 lg:gap-10 p-4 mb-4 lg:mb-16 overflow-x-hidden select-none">
+          <div className="flex gap-5 lg:gap-10 p-4  overflow-x-hidden select-none">
             <div className="marquee-container flex flex-row gap-20">
               <ul className="flex flex-row min-w-full run flex-shrink-0 content-around items-center gap-5 lg:gap-32 md:animate-marqueeScroll">
                 {renderLogo(

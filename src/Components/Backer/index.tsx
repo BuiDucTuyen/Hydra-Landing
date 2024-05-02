@@ -9,7 +9,7 @@ const Backer: React.FC = () => {
         <h1 className="text-[#270017] clash lg:text-[40px]  text-[24px] font-semibold mb-4 uppercase">
           {t("Backers")}
         </h1>
-        <h2 className=" text-ec-purple-700 text-center  px-5 lg:px-0 text-[18px] mb-5 lg:mb-12 font-normal">
+        <h2 className=" text-ec-purple-700 text-center  px-5 lg:px-0 text-[18px] max-w-[530px] mx-auto mb-5 lg:mb-12 font-normal">
           {t("market")}
         </h2>
         <div className="flex flex-wrap justify-center items-center gap-5">

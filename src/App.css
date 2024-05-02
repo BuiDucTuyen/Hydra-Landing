@@ -155,7 +155,7 @@
 @font-face {
   font-family: "ClashDisplay";
   src: local("AirbnbCerealLight"),
-    url("../public/Fonts/ClashDisplay-Semibold.otf") format('woff');
+    url("../public/Fonts/Geologica-SemiBold.ttf") format('truetype');
   font-weight: normal;
   font-style: normal;
 }
