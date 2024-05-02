@@ -207,6 +207,7 @@ const Navbar: React.FC = () => {
     <section className="animate-fadeInDown manrope">
       <nav className="container mx-auto py-[16px] px-4 flex justify-between items-center animate-fadeInDown">
         <img className="" src="./Img/Logo.png" alt="Logo" />
+
         <div className="hidden lg:block">
           <ul className="flex text-[#270017] text-[14px] font-normal justify-between items-center gap-10">
             <Dropdown className="text-[16px] clash  " menu={{ items: explore }}>
@@ -249,7 +250,7 @@ const Navbar: React.FC = () => {
             className="navbar-burger flex items-center text-white p-3"
             onClick={toggleMenu}
           >
-            <img src="../svg/Frame 3072.png" alt="Menu" />
+            <img src="../Img/Frame 3072.png" alt="Menu" />
           </button>
         </div>
         <div
