@@ -142,6 +142,7 @@ input[type="number"] {
 .logo-image:hover {
   box-shadow: 0 4px 8px 0 rgba(255, 105, 180, 0.2);
 
+
 }
 .coinUtility .rightSide li::after {
   content: "";
@@ -797,4 +798,11 @@ input[type="number"] {
   100% {
     opacity: 1;
   }
+}
+
+
+
+.ant-space-item:hover {
+  cursor: pointer;
+  
 }

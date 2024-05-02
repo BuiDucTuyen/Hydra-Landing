@@ -12,6 +12,7 @@ const Navbar: React.FC = () => {
   const { t } = useTranslation();
   const explore: MenuProps["items"] = [
     {
+      key: "0",
       label: (
         <a
           target="_blank"
@@ -21,9 +22,10 @@ const Navbar: React.FC = () => {
           Hyperaschain Layer 1
         </a>
       ),
-      key: "0",
+      onClick: () => setMenuOpen(false), // Đóng menu khi mục được nhấp
     },
     {
+      key: "1",
       label: (
         <a
           target="_blank"
@@ -33,9 +35,10 @@ const Navbar: React.FC = () => {
           Hyperaschain Ecosystem
         </a>
       ),
-      key: "1",
+      onClick: () => setMenuOpen(false), // Đóng menu khi mục được nhấp
     },
     {
+      key: "2",
       label: (
         <a
           target="_blank"
@@ -45,9 +48,10 @@ const Navbar: React.FC = () => {
           Presskit
         </a>
       ),
-      key: "2",
+      onClick: () => setMenuOpen(false), // Đóng menu khi mục được nhấp
     },
     {
+      key: "divider",
       type: "divider",
     },
   ];
@@ -59,6 +63,7 @@ const Navbar: React.FC = () => {
         </a>
       ),
       key: "0",
+      onClick: () => setMenuOpen(false), // Đóng menu khi mục được nhấp
     },
     {
       label: (
@@ -67,6 +72,7 @@ const Navbar: React.FC = () => {
         </a>
       ),
       key: "1",
+      onClick: () => setMenuOpen(false), // Đóng menu khi mục được nhấp
     },
     {
       label: (
@@ -79,6 +85,7 @@ const Navbar: React.FC = () => {
         </a>
       ),
       key: "2",
+      onClick: () => setMenuOpen(false), // Đóng menu khi mục được nhấp
     },
     {
       label: (
@@ -91,6 +98,7 @@ const Navbar: React.FC = () => {
         </a>
       ),
       key: "3",
+      onClick: () => setMenuOpen(false), // Đóng menu khi mục được nhấp
     },
     {
       label: (
@@ -103,6 +111,7 @@ const Navbar: React.FC = () => {
         </a>
       ),
       key: "4",
+      onClick: () => setMenuOpen(false), // Đóng menu khi mục được nhấp
     },
     {
       label: (
@@ -115,6 +124,7 @@ const Navbar: React.FC = () => {
         </a>
       ),
       key: "5",
+      onClick: () => setMenuOpen(false), // Đóng menu khi mục được nhấp
     },
     {
       label: (
@@ -127,8 +137,10 @@ const Navbar: React.FC = () => {
         </a>
       ),
       key: "6",
+      onClick: () => setMenuOpen(false), // Đóng menu khi mục được nhấp
     },
     {
+      key: "divider",
       type: "divider",
     },
   ];
@@ -198,7 +210,56 @@ const Navbar: React.FC = () => {
       ),
       key: "1",
     },
-
+    {
+      label: (
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.facebook.com/hyperaschain"
+        >
+          Hyperaschain Facebook
+        </a>
+      ),
+      key: "2",
+    },
+    {
+      label: (
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://twitter.com/hyperaschain"
+        >
+          Hyperaschain X
+        </a>
+      ),
+      key: "3",
+    },
+    {
+      label: (
+        // <a
+        //   target="_blank"
+        //   rel="noopener noreferrer"
+        //   href="https://t.me/hyperaschaingroup"
+        // >
+        //   Salala community
+        // </a>
+        <li>Salala community</li>
+      ),
+      key: "4",
+    },
+    {
+      label: (
+        // <a
+        //   target="_blank"
+        //   rel="noopener noreferrer"
+        //   href="https://t.me/hyperaschaingroup"
+        // >
+        //   Hyperas Global Group
+        // </a>
+        <li>Egabid community</li>
+      ),
+      key: "5",
+    },
     {
       type: "divider",
     },
@@ -207,28 +268,39 @@ const Navbar: React.FC = () => {
     <section className="animate-fadeInDown manrope">
       <nav className="container mx-auto py-[16px] px-4 flex justify-between items-center animate-fadeInDown">
         <img className="" src="./Img/Logo.png" alt="Logo" />
-
         <div className="hidden lg:block">
           <ul className="flex text-[#270017] text-[14px] justify-between items-center gap-10">
-            <Dropdown className="text-[16px]   " menu={{ items: explore }}>
+            <Dropdown
+              className="text-[16px] hover:text-pink-400   "
+              menu={{ items: explore }}
+            >
               <Space>
                 {t("explore")}
                 <img src="../svg/direction-down 01.svg" alt="" />
               </Space>
             </Dropdown>
-            <Dropdown className="text-[16px] " menu={{ items: applications }}>
+            <Dropdown
+              className="text-[16px] hover:text-pink-400 "
+              menu={{ items: applications }}
+            >
               <Space>
                 {t("applications")}
                 <img src="../svg/direction-down 01.svg" alt="" />
               </Space>
             </Dropdown>
-            <Dropdown className="text-[16px] " menu={{ items: foundation }}>
+            <Dropdown
+              className="text-[16px] hover:text-pink-400 "
+              menu={{ items: foundation }}
+            >
               <Space>
                 {t("Foundation")}
                 <img src="../svg/direction-down 01.svg" alt="" />
               </Space>
             </Dropdown>
-            <Dropdown className="text-[16px]" menu={{ items: community }}>
+            <Dropdown
+              className="text-[16px] hover:text-pink-400 "
+              menu={{ items: community }}
+            >
               <Space>
                 {t("Community")}
                 <img src="../svg/direction-down 01.svg" alt="" />

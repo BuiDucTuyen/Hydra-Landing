@@ -124,9 +124,10 @@ const Footer: React.FC = () => {
                 {t("developers")}
               </h2>
               <ul className="flex flex-col  text-ec-purple-700 text-[12px] lg:text-[14px] gap-4 mt-3">
-                <a className="hover:text-slate-400" href="/">
+                <li>Get Started</li>
+                {/* <a className="hover:text-slate-400" href="/">
                   <li>Get Started</li>
-                </a>
+                </a> */}
                 <a
                   className="hover:text-slate-400"
                   href="https://docs.hyperaschain.com/developers"
@@ -139,16 +140,20 @@ const Footer: React.FC = () => {
                 >
                   <li>Video Tutorials</li>
                 </a>
-                <a className="hover:text-slate-400" href="/">
+                {/* <a className="hover:text-slate-400" href="/">
                   <li>Documentation</li>
-                </a>
+                </a> */}
+                <li>Documentation</li>
                 <a
                   className="hover:text-slate-400"
                   href="https://www.hyperaschain.com/news"
                 >
                   <li>Blog</li>
                 </a>
-                <a className="hover:text-slate-400" href="/">
+                <a
+                  className="hover:text-slate-400"
+                  href="https://t.me/hyperaschaingroup"
+                >
                   <li>Support</li>
                 </a>
               </ul>
@@ -253,12 +258,14 @@ const Footer: React.FC = () => {
                 >
                   <li>Hyperaschain X</li>
                 </a>
-                <a className="hover:text-slate-400" href="/">
+                {/* <a className="hover:text-slate-400" href="/">
                   <li>Salala community</li>
-                </a>
-                <a className="hover:text-slate-400" href="/">
+                </a> */}
+                <li>Salala community</li>
+                {/* <a className="hover:text-slate-400" href="/">
                   <li>Egabid community</li>
-                </a>
+                </a> */}
+                <li>Egabid community</li>
               </ul>
             </div>
             <div className="hidden lg:block">
