@@ -113,7 +113,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
           </div>
-          <p className="text-ec-purple-700 text-[14px] text-left mt-4 font-normal hidden md:block">
+          <p className="text-ec-purple-700 text-[14px] text-left mt-2 font-normal hidden md:block">
             © 2024 Hyperaschain.com. All rights reserved.
           </p>
         </nav>
@@ -127,10 +127,10 @@ const Footer: React.FC = () => {
                 <a className="" href="/">
                   <li>Get Started</li>
                 </a>
-                <a className="" href="/">
+                <a className="" href="https://docs.hyperaschain.com/developers">
                   <li>Hyperas Program</li>
                 </a>
-                <a className="" href="/">
+                <a className="" href="https://www.youtube.com/@Hyperaschain">
                   <li>Video Tutorials</li>
                 </a>
                 <a className="" href="/">
