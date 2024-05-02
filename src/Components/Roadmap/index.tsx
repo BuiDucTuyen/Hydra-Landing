@@ -36,7 +36,7 @@ const RoadMap = () => {
               </div>
               <div className="platform aspect-square max-w-[95px] flex flex-col justify-center items-center w-full absolute">
                 <img
-                  src="./Img/cham.png"
+                  src="../Img/Group 121850.png"
                   alt=""
                   className="object-contain w-8 h-8"
                 />
@@ -109,7 +109,7 @@ const RoadMap = () => {
                   {t("Phase 3")}
                 </p>
                 <img
-                  src="./Img/cham.png"
+                  src="./Img/Group 121847.png"
                   alt=""
                   className="object-contain w-8 h-8"
                 />
@@ -135,7 +135,7 @@ const RoadMap = () => {
                   {t("Phase 5")}
                 </p>
                 <img
-                  src="./Img/cham.png"
+                  src="./Img/Group 121850.png"
                   alt=""
                   className="object-contain w-8 h-8"
                 />
@@ -201,7 +201,7 @@ const RoadMap = () => {
               </div>
               <div className="text-left px-4 mb-10 relative">
                 <img
-                  src="./Img/cham.png"
+                  src="./Img/Group 121847.png"
                   alt=""
                   className="absolute left-[-32px] top-[10px] w-11 h-11"
                 />
@@ -221,7 +221,7 @@ const RoadMap = () => {
               </div>
               <div className="text-left px-4 mb-10 relative">
                 <img
-                  src="./Img/cham.png"
+                  src="./Img/Group 121850.png"
                   alt=""
                   className="absolute left-[-32px] top-[10px] w-11 h-11"
                 />
@@ -243,7 +243,7 @@ const RoadMap = () => {
               </div>
               <div className="text-left px-4 mb-10 relative">
                 <img
-                  src="./Img/cham.png"
+                  src="./Img/Group 121850.png"
                   alt=""
                   className="absolute left-[-32px] top-[10px] w-11 h-11"
                 />

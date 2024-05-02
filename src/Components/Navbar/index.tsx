@@ -209,7 +209,7 @@ const Navbar: React.FC = () => {
         <img className="" src="./Img/Logo.png" alt="Logo" />
 
         <div className="hidden lg:block">
-          <ul className="flex text-[#270017] text-[14px] font-normal justify-between items-center gap-10">
+          <ul className="flex text-[#270017] text-[14px] justify-between items-center gap-10">
             <Dropdown className="text-[16px] clash  " menu={{ items: explore }}>
               <Space>
                 {t("explore")}
@@ -283,7 +283,7 @@ const Navbar: React.FC = () => {
             </div>
 
             {/* Menu Items */}
-            <ul className="flex flex-col text-[#270017] text-[14px] justify-center font-normal items-center gap-7">
+            <ul className="flex flex-col text-[#270017] text-[14px] justify-center  items-center gap-7">
               <Dropdown
                 className="text-[16px] clash  "
                 menu={{ items: explore }}

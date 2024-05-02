@@ -80,7 +80,7 @@ const Footer: React.FC = () => {
                 />
               </a>
             </div>
-            <div className="flex flex-col justify-center items-center mt-5 lg:hidden block">
+            <div className="flex-col justify-center items-center mt-5 lg:hidden block">
               <div className="flex gap-1 relative">
                 <img src="./svg/globe.svg" alt="" />
                 <button
@@ -113,7 +113,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
           </div>
-          <p className="text-ec-purple-700 text-[14px] text-left mt-2 font-normal hidden md:block">
+          <p className="text-ec-purple-700 text-[14px] text-left font-normal hidden md:block">
             © 2024 Hyperaschain.com. All rights reserved.
           </p>
         </nav>
