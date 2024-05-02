@@ -210,31 +210,25 @@ const Navbar: React.FC = () => {
 
         <div className="hidden lg:block">
           <ul className="flex text-[#270017] text-[14px] justify-between items-center gap-10">
-            <Dropdown className="text-[16px] clash  " menu={{ items: explore }}>
+            <Dropdown className="text-[16px]   " menu={{ items: explore }}>
               <Space>
                 {t("explore")}
                 <img src="../svg/direction-down 01.svg" alt="" />
               </Space>
             </Dropdown>
-            <Dropdown
-              className="text-[16px] clash"
-              menu={{ items: applications }}
-            >
+            <Dropdown className="text-[16px] " menu={{ items: applications }}>
               <Space>
                 {t("applications")}
                 <img src="../svg/direction-down 01.svg" alt="" />
               </Space>
             </Dropdown>
-            <Dropdown
-              className="text-[16px] clash"
-              menu={{ items: foundation }}
-            >
+            <Dropdown className="text-[16px] " menu={{ items: foundation }}>
               <Space>
                 {t("Foundation")}
                 <img src="../svg/direction-down 01.svg" alt="" />
               </Space>
             </Dropdown>
-            <Dropdown className="text-[16px] clash" menu={{ items: community }}>
+            <Dropdown className="text-[16px]" menu={{ items: community }}>
               <Space>
                 {t("Community")}
                 <img src="../svg/direction-down 01.svg" alt="" />
@@ -283,38 +277,26 @@ const Navbar: React.FC = () => {
             </div>
 
             {/* Menu Items */}
-            <ul className="flex flex-col text-[#270017] text-[14px] justify-center  items-center gap-7">
-              <Dropdown
-                className="text-[16px] clash  "
-                menu={{ items: explore }}
-              >
+            <ul className="flex flex-col text-[#270017] text-[14px] justify-center items-center gap-7">
+              <Dropdown className="text-[16px]   " menu={{ items: explore }}>
                 <Space>
                   {t("explore")}
                   <img src="../svg/direction-down 01.svg" alt="" />
                 </Space>
               </Dropdown>
-              <Dropdown
-                className="text-[16px] clash"
-                menu={{ items: applications }}
-              >
+              <Dropdown className="text-[16px] " menu={{ items: applications }}>
                 <Space>
                   {t("applications")}
                   <img src="../svg/direction-down 01.svg" alt="" />
                 </Space>
               </Dropdown>
-              <Dropdown
-                className="text-[16px] clash"
-                menu={{ items: foundation }}
-              >
+              <Dropdown className="text-[16px] " menu={{ items: foundation }}>
                 <Space>
                   {t("Foundation")}
                   <img src="../svg/direction-down 01.svg" alt="" />
                 </Space>
               </Dropdown>
-              <Dropdown
-                className="text-[16px] clash"
-                menu={{ items: community }}
-              >
+              <Dropdown className="text-[16px] " menu={{ items: community }}>
                 <Space>
                   {t("Community")}
                   <img src="../svg/direction-down 01.svg" alt="" />
