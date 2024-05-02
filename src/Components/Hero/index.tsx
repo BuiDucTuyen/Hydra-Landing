@@ -8,12 +8,12 @@ const Hero: React.FC = () => {
     <section className="animate-fadeInDown py-5bg-roadmap4 ml-2 py-4 lg:py-20">
       <nav className="  flex xl:flex-row flex-col  gap-10 justify-between mx-auto ">
         <div className=" xl:max-w-[650px] 2xl:max-w-[1000px] 2xl:ml-[350px] lg:ml-[50px]">
-          <h1 className="text-[40px] 2xl:text-[72px] xl:text-left text-center mb-5 md:text-[55px] lg:text-[50px] lg:text-center clash text-[#270017] font-semibold leading-[50px] lg:leading-[80px]">
+          <h1 className="text-[32px] 2xl:text-[72px] xl:text-left text-center mb-5 md:text-[55px] lg:text-[50px] lg:text-center clash text-[#270017] font-semibold leading-[50px] lg:leading-[80px]">
             BLOCKCHAIN ft. AI <br />
             WITHOUT<span className="text-[#EC008C]"> LIMITS</span>{" "}
           </h1>
 
-          <h2 className="text-[#523345] mb-16 xl:text-left xl:px-0 2xl:max-w-[600px]  text-[18px] md:text-[24px] px-6 text-center manrope font-normal lg:max-full">
+          <h2 className="text-[#523345] mb-8 lg:mb-16 xl:text-left xl:px-0 2xl:max-w-[600px] text-[16px] md:text-[24px] px-6 text-center manrope font-normal lg:max-full">
             {t("Hyperas")}
           </h2>
           <div className="lg:max-w-full flex gap-6 justify-center  xl:justify-start manrope">

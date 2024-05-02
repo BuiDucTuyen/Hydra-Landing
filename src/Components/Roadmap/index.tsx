@@ -157,7 +157,7 @@ const RoadMap = () => {
 
           {/* mobile */}
           <div className="lg:hidden bg-roadmap5 bg-center bg-no-repeat  px-6 relative">
-            <h1 className="text-[#270017] lg:text-[40px] text-[28px] clash font-semibold uppercase text-center pt-[32px] ">
+            <h1 className="text-[#270017] lg:text-[40px] text-[24px] mb-4 clash font-semibold uppercase text-center pt-[32px] ">
               {t("roadmap")}
             </h1>
             <div className="border-l-4 border-gradient-to-r from-transparent to-ffc5e7 via-fb89cc to-0094b0 px-2">

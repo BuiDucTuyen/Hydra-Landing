@@ -11,7 +11,7 @@ const Build: React.FC = () => {
           <h1 className="text-[#270017] text-[24px] text-left md:text-[40px] clash mb-6 lg:mt-[80px] font-semibold">
             {t("Fastt")}
           </h1>
-          <h2 className="text-ec-purple-700 text-left text-[18px] md:text-[18px] manrope">
+          <h2 className="text-ec-purple-700 text-left text-[16px] md:text-[18px] manrope">
             {t("Chain")}
           </h2>
         </div>
