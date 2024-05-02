@@ -118,7 +118,7 @@ const Footer: React.FC = () => {
           </p>
         </nav>
         <div className="mt-2 mt-5flex justify-between lg:mt-0 px-2">
-          <nav className="flex gap-5 lg:gap-16 px-2">
+          <nav className="flex gap-5 lg:gap-10 px-2">
             <div className="text-left">
               <h2 className="text-[12px] lg:text-[1rem]  text-[#270017] uppercase font-semibold">
                 {t("developers")}
@@ -236,6 +236,22 @@ const Footer: React.FC = () => {
                   rel="noreferrer"
                 >
                   <li>Hyperaschain Vietnam</li>
+                </a>
+                <a
+                  className="hover:text-slate-400"
+                  target="_blank"
+                  href="https://www.facebook.com/hyperaschain"
+                  rel="noreferrer"
+                >
+                  <li>Hyperaschain Facebook</li>
+                </a>
+                <a
+                  className="hover:text-slate-400"
+                  target="_blank"
+                  href="https://twitter.com/hyperaschain"
+                  rel="noreferrer"
+                >
+                  <li>Hyperaschain X</li>
                 </a>
                 <a className="hover:text-slate-400" href="/">
                   <li>Salala community</li>

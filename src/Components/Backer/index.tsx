@@ -6,10 +6,10 @@ const Backer: React.FC = () => {
   return (
     <section className="bg-[#D4F3FF] py-8 lg:py-16 lg:mt-[50px] animate-fadeInDown">
       <nav className=" mx-auto">
-        <h1 className="text-[#270017] clash lg:text-[40px]  text-[28px] font-semibold mb-4 uppercase">
+        <h1 className="text-[#270017] clash lg:text-[40px]  text-[24px] font-semibold mb-4 uppercase">
           {t("Backers")}
         </h1>
-        <h2 className=" text-ec-purple-700 text-center lg:text-[18px] mb-12 font-normal">
+        <h2 className=" text-ec-purple-700 text-center  px-5 lg:px-0 text-[18px] mb-5 lg:mb-12 font-normal">
           {t("market")}
         </h2>
         <div className="flex flex-wrap justify-center items-center gap-5">
