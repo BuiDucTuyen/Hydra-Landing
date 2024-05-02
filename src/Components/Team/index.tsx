@@ -7,13 +7,29 @@ import { useTranslation } from "react-i18next";
 const Team: React.FC = () => {
   const { t } = useTranslation();
   const teamMembers = [
-    { name: "JohnB", position: "Product Owner" },
-    { name: "David", position: "CMO" },
-    { name: "Cris Nguyen", position: "Blockchain Leader" },
-    { name: "Satoshi Bui", position: "Solution Architecture" },
-    { name: "Andy Tran", position: "UI/UX Leader" },
-    { name: "Noblu", position: "dApp Developer" },
-    { name: "Thomas Nguyen", position: "Backend Developer" },
+    { name: "JohnB", position: "Product Owner", image: "./Img/Member 1.png" },
+    { name: "David", position: "CMO", image: "./Img/Member 2.png" },
+    {
+      name: "Cris Nguyen",
+      position: "Blockchain Leader",
+      image: "./Img/Member 3.png",
+    },
+    {
+      name: "Satoshi Bui",
+      position: "Solution Architecture",
+      image: "./Img/Member 4.png",
+    },
+    {
+      name: "Andy Tran",
+      position: "UI/UX Leader",
+      image: "./Img/Member 5.png",
+    },
+    { name: "Noblu", position: "dApp Developer", image: "./Img/Member 6.png" },
+    {
+      name: "Thomas Nguyen",
+      position: "Backend Developer",
+      image: "./Img/Member 7.png",
+    },
   ];
 
   const settings = {
@@ -52,12 +68,13 @@ const Team: React.FC = () => {
               key={index}
               className="slick-slide mb-4 lg:mb-10 flex gap-2 justify-center"
             >
-              <div className="team-member text-center">
+              <div className="team-member py-8 px-8 lg:p-4 text-center">
                 <img
                   className="mb-6 mx-auto"
-                  src="/Img/Frame 3213.png"
-                  alt=""
+                  src={member.image}
+                  alt={member.name}
                 />
+
                 <h2 className="text-[#32021E] font-bold text-[18px]">
                   {member.name}
                 </h2>
