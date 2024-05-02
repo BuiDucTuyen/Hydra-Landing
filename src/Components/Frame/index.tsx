@@ -5,7 +5,7 @@ const Frame: React.FC = () => {
   const { t } = useTranslation();
   return (
     <section className="py-6 animate-fadeInDown">
-      <nav className="max-w-[1200px] mx-auto bg-frame px-6 lg:px-2 rounded-xl py-8 bg-no-repeat">
+      <nav className="max-w-[1200px] mx-auto bg-frame bg-center lg:bg-cover px-6 lg:px-2 rounded-xl py-8 bg-no-repeat">
         <h1 className="text-[#270017] clash  font-medium text-[24px] mb-5">
           {t("Subscribe")}
         </h1>
