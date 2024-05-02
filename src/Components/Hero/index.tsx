@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 const Hero: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <section className="animate-fadeInDown py-10 lg:y-20">
+    <section className="animate-fadeInDown py-5bg-roadmap4 ml-2 px-6 py-4 lg:py-20">
       <nav className="  flex xl:flex-row flex-col  gap-10 justify-between mx-auto ">
         <div className=" xl:max-w-[650px] 2xl:max-w-[1000px] 2xl:ml-[350px] lg:ml-[50px]">
           <h1 className="text-[40px] 2xl:text-[80px] xl:text-left text-center mb-5 md:text-[55px] lg:text-[50px] lg:text-center clash text-[#270017] font-semibold  ">

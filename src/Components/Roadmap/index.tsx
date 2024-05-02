@@ -11,7 +11,7 @@ const RoadMap = () => {
           {t("roadmap")}
         </h1>
         <React.Fragment>
-          <div className="mt-[60px] hidden lg:grid grid-cols-6 roadmap">
+          <div className="mt-[60px] hidden lg:px-8 lg:grid grid-cols-6 roadmap">
             <div className="relative border-r border-left border-solid border-[#EC008C]  h-[270px]">
               <div className="aura active">
                 <div className="core"></div>
@@ -208,7 +208,7 @@ const RoadMap = () => {
                 <p className="text-[#006D82] ml-2 uppercase text-[16px] mb-1 font-semibold gap-2">
                   {t("Phase 3")}
                 </p>
-                <div className="bg-roadmap3 ml-2 px-6 py-4">
+                <div className="bg-roadmap3 ml-2 px-6 py-4 bg-no-repeat sm:bg-repeat">
                   <h5 className="text-[#32021E] font-bold  text-lg ">
                     {t("Q3 2023")}
                   </h5>
@@ -228,7 +228,7 @@ const RoadMap = () => {
                 <p className="text-[#006D82] ml-2 uppercase text-[16px] mb-1 font-semibold gap-2">
                   {t("Phase 4")}
                 </p>
-                <div className="bg-roadmap4 ml-2 px-6 py-4">
+                <div className="bg-roadmap4 ml-2 px-6 py-4 bg-no-repeat sm:bg-repeat">
                   <h5 className="text-[#32021E] font-bold  text-lg ">
                     {t("Q2 2023")}
                   </h5>

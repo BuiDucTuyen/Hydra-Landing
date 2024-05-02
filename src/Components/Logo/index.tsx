@@ -18,102 +18,66 @@ const Logo = () => {
               <ul className="flex flex-row min-w-full run flex-shrink-0 content-around items-center gap-32 md:animate-marqueeScroll">
                 {renderLogo(
                   "Armory",
-                  "../svg/egabid.svg",
+                  "../Img/egabid.png",
                   220,
                   64,
                   "https://egabid.com/"
                 )}
+                {renderLogo("Armory", "../Img/hyracare.png", 220, 64, "/")}
                 {renderLogo(
                   "Armory",
-                  "../svg/Frame 3222.svg",
+                  "../Img/pindias.png",
                   220,
                   64,
                   "https://pindias.com/"
                 )}
-                {renderLogo("Armory", "../svg/Group (1).svg", 220, 64, "/")}
+                {renderLogo("Armory", "../Img/Group.png", 220, 64, "/")}
+                {renderLogo("Armory", "../Img/Group (1).png", 220, 70, "/")}
                 {renderLogo(
                   "Armory",
-                  "../svg/Frame.svg",
-                  220,
-                  64,
-                  "https://pindias.com/"
-                )}
-                {renderLogo(
-                  "Armory",
-                  "../svg/Frame 3222.svg",
-                  220,
-                  64,
-                  "https://pindias.com/"
-                )}
-                {renderLogo(
-                  "Armory",
-                  "../svg/Group.svg",
+                  "../Img/egabid.png",
                   220,
                   60,
-                  "https://salala.io/"
+                  "https://egabid.com/"
                 )}
-                {renderLogo("Armory", "../svg/Group (1).svg", 220, 64, "/")}
+                {renderLogo("Armory", "../Img/hyracare.png", 220, 64, "/")}
                 {renderLogo(
                   "Armory",
-                  "../svg/Group.svg",
+                  "../Img/pindias.png",
                   220,
                   64,
-                  "https://salala.io/"
+                  "https://pindias.com/"
                 )}
               </ul>
               <ul className="flex flex-row min-w-full run flex-shrink-0 content-around items-center gap-32 md:animate-marqueeScroll">
                 {renderLogo(
                   "Armory",
-                  "../svg/egabid.svg",
+                  "../Img/egabid.png",
                   220,
                   64,
                   "https://egabid.com/"
                 )}
+                {renderLogo("Armory", "../Img/hyracare.png", 220, 64, "/")}
                 {renderLogo(
                   "Armory",
-                  "../svg/Frame 3222.svg",
+                  "../Img/pindias.png",
                   220,
                   64,
                   "https://pindias.com/"
                 )}
+                {renderLogo("Armory", "../Img/Group.png", 220, 64, "/")}
+                {renderLogo("Armory", "../Img/Group (1).png", 220, 70, "/")}
                 {renderLogo(
                   "Armory",
-                  "../svg/Group (1).svg",
+                  "../Img/egabid.png",
                   220,
-                  64,
-                  "https://docs.hyperaschain.com/technology/architecture"
+                  60,
+                  "https://egabid.com/"
                 )}
+                {renderLogo("Armory", "../Img/hyracare.png", 220, 64, "/")}
                 {renderLogo(
                   "Armory",
-                  "../svg/Frame.svg",
-                  220,
-                  64,
-                  "https://pindias.com/"
-                )}
-                {renderLogo(
-                  "Armory",
-                  "../svg/Frame 3222.svg",
-                  220,
-                  64,
-                  "https://pindias.com/"
-                )}
-                {renderLogo(
-                  "Armory",
-                  "../svg/Group.svg",
-                  220,
-                  64,
-                  "https://salala.io/"
-                )}
-                {renderLogo(
-                  "Armory",
-                  "../svg/Group (1).svg",
-                  220,
-                  64,
-                  "https://salala.io/"
-                )}
-                {renderLogo(
-                  "Armory",
-                  "../svg/Frame.svg",
+                  "../Img/pindias.png",
                   220,
                   64,
                   "https://pindias.com/"
@@ -134,7 +98,7 @@ const renderLogo = (
   height: number,
   link: string
 ) => (
-  <li className=" ">
+  <li className=" p-2 ">
     <a href={link} target="_blank" rel="noopener noreferrer">
       <img
         alt={alt}
@@ -142,7 +106,7 @@ const renderLogo = (
         width={width}
         height={height}
         src={src}
-        className="logo-image  logo-container  transition-opacity p-2 duration-300 ease-in-out "
+        className="logo-image py-2 px-4 rounded-[8px] logo-container  transition-opacity duration-300 ease-in-out "
       />
     </a>
   </li>
