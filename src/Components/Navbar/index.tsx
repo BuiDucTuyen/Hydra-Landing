@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import type { MenuProps } from "antd";
-import { Dropdown, Space } from "antd";
+import { Dropdown, Space, Menu } from "antd";
 import { useTranslation } from "react-i18next";
+
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const { t } = useTranslation();
-  const explore: MenuProps["items"] = [
+  const exploreMenu = [
     {
       key: "0",
       label: (
@@ -55,7 +55,8 @@ const Navbar: React.FC = () => {
       type: "divider",
     },
   ];
-  const applications: MenuProps["items"] = [
+
+  const applicationsMenu = [
     {
       label: (
         <a target="_blank" rel="noopener noreferrer" href="https://salala.io/">
@@ -144,7 +145,8 @@ const Navbar: React.FC = () => {
       type: "divider",
     },
   ];
-  const foundation: MenuProps["items"] = [
+
+  const foundationMenu = [
     {
       label: (
         <a
@@ -185,7 +187,8 @@ const Navbar: React.FC = () => {
       type: "divider",
     },
   ];
-  const community: MenuProps["items"] = [
+
+  const communityMenu = [
     {
       label: (
         <a
@@ -235,35 +238,18 @@ const Navbar: React.FC = () => {
       key: "3",
     },
     {
-      label: (
-        // <a
-        //   target="_blank"
-        //   rel="noopener noreferrer"
-        //   href="https://t.me/hyperaschaingroup"
-        // >
-        //   Salala community
-        // </a>
-        <li>Salala community</li>
-      ),
+      label: <span>Salala community</span>,
       key: "4",
     },
     {
-      label: (
-        // <a
-        //   target="_blank"
-        //   rel="noopener noreferrer"
-        //   href="https://t.me/hyperaschaingroup"
-        // >
-        //   Hyperas Global Group
-        // </a>
-        <li>Egabid community</li>
-      ),
+      label: <span>Egabid community</span>,
       key: "5",
     },
     {
       type: "divider",
     },
   ];
+
   return (
     <section className="animate-fadeInDown manrope">
       <nav className="container mx-auto py-[16px] px-4 flex justify-between items-center animate-fadeInDown">
@@ -271,8 +257,17 @@ const Navbar: React.FC = () => {
         <div className="hidden lg:block">
           <ul className="flex text-[#270017] text-[14px] justify-between items-center gap-10">
             <Dropdown
-              className="text-[16px] hover:text-pink-400   "
-              menu={{ items: explore }}
+              className="text-[16px] hover:text-pink-400"
+              overlay={
+                <Menu>
+                  {exploreMenu.map((item) => (
+                    <Menu.Item key={item.key} onClick={item.onClick}>
+                      {item.label}
+                    </Menu.Item>
+                  ))}
+                </Menu>
+              }
+              trigger={["click"]}
             >
               <Space>
                 {t("explore")}
@@ -280,8 +275,17 @@ const Navbar: React.FC = () => {
               </Space>
             </Dropdown>
             <Dropdown
-              className="text-[16px] hover:text-pink-400 "
-              menu={{ items: applications }}
+              className="text-[16px] hover:text-pink-400"
+              overlay={
+                <Menu>
+                  {applicationsMenu.map((item) => (
+                    <Menu.Item key={item.key} onClick={item.onClick}>
+                      {item.label}
+                    </Menu.Item>
+                  ))}
+                </Menu>
+              }
+              trigger={["click"]}
             >
               <Space>
                 {t("applications")}
@@ -289,8 +293,15 @@ const Navbar: React.FC = () => {
               </Space>
             </Dropdown>
             <Dropdown
-              className="text-[16px] hover:text-pink-400 "
-              menu={{ items: foundation }}
+              className="text-[16px] hover:text-pink-400"
+              overlay={
+                <Menu>
+                  {foundationMenu.map((item) => (
+                    <Menu.Item key={item.key}>{item.label}</Menu.Item>
+                  ))}
+                </Menu>
+              }
+              trigger={["click"]}
             >
               <Space>
                 {t("Foundation")}
@@ -298,8 +309,15 @@ const Navbar: React.FC = () => {
               </Space>
             </Dropdown>
             <Dropdown
-              className="text-[16px] hover:text-pink-400 "
-              menu={{ items: community }}
+              className="text-[16px] hover:text-pink-400"
+              overlay={
+                <Menu>
+                  {communityMenu.map((item) => (
+                    <Menu.Item key={item.key}>{item.label}</Menu.Item>
+                  ))}
+                </Menu>
+              }
+              trigger={["click"]}
             >
               <Space>
                 {t("Community")}
@@ -350,25 +368,65 @@ const Navbar: React.FC = () => {
 
             {/* Menu Items */}
             <ul className="flex flex-col text-[#270017] text-[14px] justify-center items-center gap-7">
-              <Dropdown className="text-[16px]   " menu={{ items: explore }}>
+              <Dropdown
+                className="text-[16px] hover:text-pink-400"
+                overlay={
+                  <Menu>
+                    {exploreMenu.map((item) => (
+                      <Menu.Item key={item.key}>{item.label}</Menu.Item>
+                    ))}
+                  </Menu>
+                }
+                trigger={["click"]}
+              >
                 <Space>
                   {t("explore")}
                   <img src="../svg/direction-down 01.svg" alt="" />
                 </Space>
               </Dropdown>
-              <Dropdown className="text-[16px] " menu={{ items: applications }}>
+              <Dropdown
+                className="text-[16px] hover:text-pink-400"
+                overlay={
+                  <Menu>
+                    {applicationsMenu.map((item) => (
+                      <Menu.Item key={item.key}>{item.label}</Menu.Item>
+                    ))}
+                  </Menu>
+                }
+                trigger={["click"]}
+              >
                 <Space>
                   {t("applications")}
                   <img src="../svg/direction-down 01.svg" alt="" />
                 </Space>
               </Dropdown>
-              <Dropdown className="text-[16px] " menu={{ items: foundation }}>
+              <Dropdown
+                className="text-[16px] hover:text-pink-400"
+                overlay={
+                  <Menu>
+                    {foundationMenu.map((item) => (
+                      <Menu.Item key={item.key}>{item.label}</Menu.Item>
+                    ))}
+                  </Menu>
+                }
+                trigger={["click"]}
+              >
                 <Space>
                   {t("Foundation")}
                   <img src="../svg/direction-down 01.svg" alt="" />
                 </Space>
               </Dropdown>
-              <Dropdown className="text-[16px] " menu={{ items: community }}>
+              <Dropdown
+                className="text-[16px] hover:text-pink-400"
+                overlay={
+                  <Menu>
+                    {communityMenu.map((item) => (
+                      <Menu.Item key={item.key}>{item.label}</Menu.Item>
+                    ))}
+                  </Menu>
+                }
+                trigger={["click"]}
+              >
                 <Space>
                   {t("Community")}
                   <img src="../svg/direction-down 01.svg" alt="" />
