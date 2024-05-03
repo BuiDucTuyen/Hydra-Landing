@@ -1,23 +1,41 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Dropdown, Space, Menu } from "antd";
 import { useTranslation } from "react-i18next";
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const { t } = useTranslation();
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [arrowRotation, setArrowRotation] = useState(false);
+  const [dropdownActive, setDropdownActive] = useState<string | null>(null);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const [dropdownActive, setDropdownActive] = useState<string | null>(null);
-
   const toggleDropdown = (dropdown: string) => {
     setDropdownActive(dropdownActive === dropdown ? null : dropdown);
   };
 
+  const toggleDropdownState = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
+
   const closeDropdown = () => {
     setDropdownActive(null);
+  };
+
+  useEffect(() => {
+    setArrowRotation(dropdownOpen);
+  }, [dropdownOpen]);
+
+  const handleDropdownClick = (dropdown: string) => {
+    if (dropdownActive === dropdown) {
+      setDropdownActive(null);
+    } else {
+      setDropdownActive(dropdown);
+    }
+    setMenuOpen(false); // Đóng menu khi chọn dropdown item
   };
 
   const exploreMenu = [
@@ -282,15 +300,20 @@ const Navbar: React.FC = () => {
               trigger={["click"]}
               onVisibleChange={() => toggleDropdown("explore")}
             >
-              <Space>
+              <Space onClick={() => handleDropdownClick("explore")}>
                 {t("explore")}
                 <img
-                  className="w-6 h-6"
+                  className={`w-6 h-6 transform ${
+                    arrowRotation && dropdownActive === "explore"
+                      ? "rotate-180"
+                      : ""
+                  }`}
                   src="../svg/direction-down 01.svg"
                   alt=""
                 />
               </Space>
             </Dropdown>
+            {/* Dropdown Applications */}
             <Dropdown
               className={`text-[16px] ${
                 dropdownActive === "applications" ? "dropdown-active" : ""
@@ -307,15 +330,20 @@ const Navbar: React.FC = () => {
               trigger={["click"]}
               onVisibleChange={() => toggleDropdown("applications")}
             >
-              <Space>
+              <Space onClick={() => handleDropdownClick("applications")}>
                 {t("applications")}
                 <img
-                  className="w-6 h-6"
+                  className={`w-6 h-6 transform ${
+                    arrowRotation && dropdownActive === "applications"
+                      ? "rotate-180"
+                      : ""
+                  }`}
                   src="../svg/direction-down 01.svg"
                   alt=""
                 />
               </Space>
             </Dropdown>
+            {/* Dropdown Foundation */}
             <Dropdown
               className={`text-[16px] ${
                 dropdownActive === "foundation" ? "dropdown-active" : ""
@@ -330,15 +358,20 @@ const Navbar: React.FC = () => {
               trigger={["click"]}
               onVisibleChange={() => toggleDropdown("foundation")}
             >
-              <Space>
+              <Space onClick={() => handleDropdownClick("foundation")}>
                 {t("Foundation")}
                 <img
-                  className="w-6 h-6"
+                  className={`w-6 h-6 transform ${
+                    arrowRotation && dropdownActive === "foundation"
+                      ? "rotate-180"
+                      : ""
+                  }`}
                   src="../svg/direction-down 01.svg"
                   alt=""
                 />
               </Space>
             </Dropdown>
+            {/* Dropdown Community */}
             <Dropdown
               className={`text-[16px] ${
                 dropdownActive === "community" ? "dropdown-active" : ""
@@ -353,10 +386,14 @@ const Navbar: React.FC = () => {
               trigger={["click"]}
               onVisibleChange={() => toggleDropdown("community")}
             >
-              <Space>
+              <Space onClick={() => handleDropdownClick("community")}>
                 {t("Community")}
                 <img
-                  className="w-6 h-6"
+                  className={`w-6 h-6 transform ${
+                    arrowRotation && dropdownActive === "community"
+                      ? "rotate-180"
+                      : ""
+                  }`}
                   src="../svg/direction-down 01.svg"
                   alt=""
                 />
@@ -502,5 +539,4 @@ const Navbar: React.FC = () => {
     </section>
   );
 };
-
 export default Navbar;
