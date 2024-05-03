@@ -9,14 +9,17 @@ const Navbar: React.FC = () => {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-  const [dropdownActive, setDropdownActive] = useState(false);
-  const toggleDropdown = () => {
-    setDropdownActive(!dropdownActive);
+
+  const [dropdownActive, setDropdownActive] = useState<string | null>(null);
+
+  const toggleDropdown = (dropdown: string) => {
+    setDropdownActive(dropdownActive === dropdown ? null : dropdown);
   };
 
   const closeDropdown = () => {
-    setDropdownActive(false);
+    setDropdownActive(null);
   };
+
   const exploreMenu = [
     {
       key: "0",
@@ -265,7 +268,7 @@ const Navbar: React.FC = () => {
           <ul className="flex text-[#270017] text-[14px] justify-between items-center gap-8">
             <Dropdown
               className={`text-[16px] ${
-                dropdownActive ? "dropdown-active" : ""
+                dropdownActive === "explore" ? "dropdown-active" : ""
               }`}
               overlay={
                 <Menu onClick={closeDropdown}>
@@ -277,7 +280,7 @@ const Navbar: React.FC = () => {
                 </Menu>
               }
               trigger={["click"]}
-              onVisibleChange={toggleDropdown}
+              onVisibleChange={() => toggleDropdown("explore")}
             >
               <Space>
                 {t("explore")}
@@ -289,9 +292,11 @@ const Navbar: React.FC = () => {
               </Space>
             </Dropdown>
             <Dropdown
-              className="text-[16px] "
+              className={`text-[16px] ${
+                dropdownActive === "applications" ? "dropdown-active" : ""
+              }`}
               overlay={
-                <Menu>
+                <Menu onClick={closeDropdown}>
                   {applicationsMenu.map((item) => (
                     <Menu.Item key={item.key} onClick={item.onClick}>
                       {item.label}
@@ -300,6 +305,7 @@ const Navbar: React.FC = () => {
                 </Menu>
               }
               trigger={["click"]}
+              onVisibleChange={() => toggleDropdown("applications")}
             >
               <Space>
                 {t("applications")}
@@ -311,15 +317,18 @@ const Navbar: React.FC = () => {
               </Space>
             </Dropdown>
             <Dropdown
-              className="text-[16px] "
+              className={`text-[16px] ${
+                dropdownActive === "foundation" ? "dropdown-active" : ""
+              }`}
               overlay={
-                <Menu>
+                <Menu onClick={closeDropdown}>
                   {foundationMenu.map((item) => (
                     <Menu.Item key={item.key}>{item.label}</Menu.Item>
                   ))}
                 </Menu>
               }
               trigger={["click"]}
+              onVisibleChange={() => toggleDropdown("foundation")}
             >
               <Space>
                 {t("Foundation")}
@@ -331,15 +340,18 @@ const Navbar: React.FC = () => {
               </Space>
             </Dropdown>
             <Dropdown
-              className="text-[16px] "
+              className={`text-[16px] ${
+                dropdownActive === "community" ? "dropdown-active" : ""
+              }`}
               overlay={
-                <Menu>
+                <Menu onClick={closeDropdown}>
                   {communityMenu.map((item) => (
                     <Menu.Item key={item.key}>{item.label}</Menu.Item>
                   ))}
                 </Menu>
               }
               trigger={["click"]}
+              onVisibleChange={() => toggleDropdown("community")}
             >
               <Space>
                 {t("Community")}
@@ -400,15 +412,18 @@ const Navbar: React.FC = () => {
             {/* Menu Items */}
             <ul className="flex flex-col text-[#270017] text-[14px] justify-center items-center gap-7">
               <Dropdown
-                className="text-[16px] hover:text-pink-400"
+                className={`text-[16px] ${
+                  dropdownActive === "explore" ? "dropdown-active" : ""
+                }`}
                 overlay={
-                  <Menu>
+                  <Menu onClick={toggleMenu}>
                     {exploreMenu.map((item) => (
                       <Menu.Item key={item.key}>{item.label}</Menu.Item>
                     ))}
                   </Menu>
                 }
                 trigger={["click"]}
+                onVisibleChange={() => toggleDropdown("explore")}
               >
                 <Space>
                   {t("explore")}
@@ -416,15 +431,18 @@ const Navbar: React.FC = () => {
                 </Space>
               </Dropdown>
               <Dropdown
-                className="text-[16px] hover:text-pink-400"
+                className={`text-[16px] ${
+                  dropdownActive === "applications" ? "dropdown-active" : ""
+                }`}
                 overlay={
-                  <Menu>
+                  <Menu onClick={toggleMenu}>
                     {applicationsMenu.map((item) => (
                       <Menu.Item key={item.key}>{item.label}</Menu.Item>
                     ))}
                   </Menu>
                 }
                 trigger={["click"]}
+                onVisibleChange={() => toggleDropdown("applications")}
               >
                 <Space>
                   {t("applications")}
@@ -432,15 +450,18 @@ const Navbar: React.FC = () => {
                 </Space>
               </Dropdown>
               <Dropdown
-                className="text-[16px] hover:text-pink-400"
+                className={`text-[16px] ${
+                  dropdownActive === "foundation" ? "dropdown-active" : ""
+                }`}
                 overlay={
-                  <Menu>
+                  <Menu onClick={toggleMenu}>
                     {foundationMenu.map((item) => (
                       <Menu.Item key={item.key}>{item.label}</Menu.Item>
                     ))}
                   </Menu>
                 }
                 trigger={["click"]}
+                onVisibleChange={() => toggleDropdown("foundation")}
               >
                 <Space>
                   {t("Foundation")}
@@ -448,15 +469,18 @@ const Navbar: React.FC = () => {
                 </Space>
               </Dropdown>
               <Dropdown
-                className="text-[16px] hover:text-pink-400"
+                className={`text-[16px] ${
+                  dropdownActive === "community" ? "dropdown-active" : ""
+                }`}
                 overlay={
-                  <Menu>
+                  <Menu onClick={toggleMenu}>
                     {communityMenu.map((item) => (
                       <Menu.Item key={item.key}>{item.label}</Menu.Item>
                     ))}
                   </Menu>
                 }
                 trigger={["click"]}
+                onVisibleChange={() => toggleDropdown("community")}
               >
                 <Space>
                   {t("Community")}
