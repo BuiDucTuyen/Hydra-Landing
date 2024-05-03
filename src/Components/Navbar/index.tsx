@@ -9,7 +9,14 @@ const Navbar: React.FC = () => {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+  const [dropdownActive, setDropdownActive] = useState(false);
+  const toggleDropdown = () => {
+    setDropdownActive(!dropdownActive);
+  };
 
+  const closeDropdown = () => {
+    setDropdownActive(false);
+  };
   const exploreMenu = [
     {
       key: "0",
@@ -64,7 +71,7 @@ const Navbar: React.FC = () => {
         </a>
       ),
       key: "0",
-      onClick: () => setMenuOpen(false), // Đóng menu khi mục được nhấp
+      onClick: () => setMenuOpen(false),
     },
     {
       label: (
@@ -73,7 +80,7 @@ const Navbar: React.FC = () => {
         </a>
       ),
       key: "1",
-      onClick: () => setMenuOpen(false), // Đóng menu khi mục được nhấp
+      onClick: () => setMenuOpen(false),
     },
     {
       label: (
@@ -86,7 +93,7 @@ const Navbar: React.FC = () => {
         </a>
       ),
       key: "2",
-      onClick: () => setMenuOpen(false), // Đóng menu khi mục được nhấp
+      onClick: () => setMenuOpen(false),
     },
     {
       label: (
@@ -99,7 +106,7 @@ const Navbar: React.FC = () => {
         </a>
       ),
       key: "3",
-      onClick: () => setMenuOpen(false), // Đóng menu khi mục được nhấp
+      onClick: () => setMenuOpen(false),
     },
     {
       label: (
@@ -112,7 +119,7 @@ const Navbar: React.FC = () => {
         </a>
       ),
       key: "4",
-      onClick: () => setMenuOpen(false), // Đóng menu khi mục được nhấp
+      onClick: () => setMenuOpen(false),
     },
     {
       label: (
@@ -125,7 +132,7 @@ const Navbar: React.FC = () => {
         </a>
       ),
       key: "5",
-      onClick: () => setMenuOpen(false), // Đóng menu khi mục được nhấp
+      onClick: () => setMenuOpen(false),
     },
     {
       label: (
@@ -138,7 +145,7 @@ const Navbar: React.FC = () => {
         </a>
       ),
       key: "6",
-      onClick: () => setMenuOpen(false), // Đóng menu khi mục được nhấp
+      onClick: () => setMenuOpen(false),
     },
     {
       key: "divider",
@@ -255,11 +262,13 @@ const Navbar: React.FC = () => {
       <nav className="container mx-auto py-[16px] px-4 flex justify-between items-center animate-fadeInDown">
         <img className="" src="./Img/Logo.png" alt="Logo" />
         <div className="hidden lg:block">
-          <ul className="flex text-[#270017] text-[14px] justify-between items-center gap-10">
+          <ul className="flex text-[#270017] text-[14px] justify-between items-center gap-8">
             <Dropdown
-              className="text-[16px] hover:text-pink-400"
+              className={`text-[16px] ${
+                dropdownActive ? "dropdown-active" : ""
+              }`}
               overlay={
-                <Menu>
+                <Menu onClick={closeDropdown}>
                   {exploreMenu.map((item) => (
                     <Menu.Item key={item.key} onClick={item.onClick}>
                       {item.label}
@@ -268,14 +277,19 @@ const Navbar: React.FC = () => {
                 </Menu>
               }
               trigger={["click"]}
+              onVisibleChange={toggleDropdown}
             >
               <Space>
                 {t("explore")}
-                <img src="../svg/direction-down 01.svg" alt="" />
+                <img
+                  className="w-6 h-6"
+                  src="../svg/direction-down 01.svg"
+                  alt=""
+                />
               </Space>
             </Dropdown>
             <Dropdown
-              className="text-[16px] hover:text-pink-400"
+              className="text-[16px] "
               overlay={
                 <Menu>
                   {applicationsMenu.map((item) => (
@@ -289,11 +303,15 @@ const Navbar: React.FC = () => {
             >
               <Space>
                 {t("applications")}
-                <img src="../svg/direction-down 01.svg" alt="" />
+                <img
+                  className="w-6 h-6"
+                  src="../svg/direction-down 01.svg"
+                  alt=""
+                />
               </Space>
             </Dropdown>
             <Dropdown
-              className="text-[16px] hover:text-pink-400"
+              className="text-[16px] "
               overlay={
                 <Menu>
                   {foundationMenu.map((item) => (
@@ -305,11 +323,15 @@ const Navbar: React.FC = () => {
             >
               <Space>
                 {t("Foundation")}
-                <img src="../svg/direction-down 01.svg" alt="" />
+                <img
+                  className="w-6 h-6"
+                  src="../svg/direction-down 01.svg"
+                  alt=""
+                />
               </Space>
             </Dropdown>
             <Dropdown
-              className="text-[16px] hover:text-pink-400"
+              className="text-[16px] "
               overlay={
                 <Menu>
                   {communityMenu.map((item) => (
@@ -321,7 +343,11 @@ const Navbar: React.FC = () => {
             >
               <Space>
                 {t("Community")}
-                <img src="../svg/direction-down 01.svg" alt="" />
+                <img
+                  className="w-6 h-6"
+                  src="../svg/direction-down 01.svg"
+                  alt=""
+                />
               </Space>
             </Dropdown>
           </ul>

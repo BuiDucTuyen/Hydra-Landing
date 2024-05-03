@@ -804,8 +804,13 @@ input[type="number"] {
 
 .ant-space-item:hover {
   cursor: pointer;
-  
+  color: #ff69b4;
 }
+
 .ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item-active {
   background-color: #F2EBEF !important;
+}
+
+.dropdown-active {
+  color: #ff69b4;
 }
