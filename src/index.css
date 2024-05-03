@@ -802,7 +802,7 @@ input[type="number"] {
 
 
 
-.ant-space-item:hover {
+.ant-space:hover {
   cursor: pointer;
   color: #ff69b4;
 }

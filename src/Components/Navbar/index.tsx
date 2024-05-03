@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Dropdown, Space, Menu } from "antd";
 import { useTranslation } from "react-i18next";
+import { DownOutlined } from "@ant-design/icons";
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -296,14 +297,13 @@ const Navbar: React.FC = () => {
             >
               <Space onClick={() => handleDropdownClick("explore")}>
                 {t("explore")}
-                <img
-                  className={`w-6 h-6 transform ${
+                <DownOutlined
+                  className={`transform ${
                     arrowRotation && dropdownActive === "explore"
                       ? "rotate-180"
                       : ""
                   }`}
-                  src="../svg/direction-down 01.svg"
-                  alt=""
+                  style={{ fontSize: "14px" }}
                 />
               </Space>
             </Dropdown>
@@ -326,14 +326,13 @@ const Navbar: React.FC = () => {
             >
               <Space onClick={() => handleDropdownClick("applications")}>
                 {t("applications")}
-                <img
-                  className={`w-6 h-6 transform ${
+                <DownOutlined
+                  className={`transform ${
                     arrowRotation && dropdownActive === "applications"
                       ? "rotate-180"
                       : ""
                   }`}
-                  src="../svg/direction-down 01.svg"
-                  alt=""
+                  style={{ fontSize: "14px" }}
                 />
               </Space>
             </Dropdown>
@@ -354,14 +353,13 @@ const Navbar: React.FC = () => {
             >
               <Space onClick={() => handleDropdownClick("foundation")}>
                 {t("Foundation")}
-                <img
-                  className={`w-6 h-6 transform ${
+                <DownOutlined
+                  className={`transform ${
                     arrowRotation && dropdownActive === "foundation"
                       ? "rotate-180"
                       : ""
                   }`}
-                  src="../svg/direction-down 01.svg"
-                  alt=""
+                  style={{ fontSize: "14px" }}
                 />
               </Space>
             </Dropdown>
@@ -382,14 +380,13 @@ const Navbar: React.FC = () => {
             >
               <Space onClick={() => handleDropdownClick("community")}>
                 {t("Community")}
-                <img
-                  className={`w-6 h-6 transform ${
+                <DownOutlined
+                  className={`transform ${
                     arrowRotation && dropdownActive === "community"
                       ? "rotate-180"
                       : ""
                   }`}
-                  src="../svg/direction-down 01.svg"
-                  alt=""
+                  style={{ fontSize: "14px" }}
                 />
               </Space>
             </Dropdown>
