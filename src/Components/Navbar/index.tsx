@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const { t } = useTranslation();
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [dropdownOpen] = useState(false);
   const [arrowRotation, setArrowRotation] = useState(false);
   const [dropdownActive, setDropdownActive] = useState<string | null>(null);
 
@@ -17,23 +17,17 @@ const Navbar: React.FC = () => {
     setDropdownActive(dropdownActive === dropdown ? null : dropdown);
   };
 
-  const toggleDropdownState = () => {
-    setDropdownOpen(!dropdownOpen);
-  };
-
   const closeDropdown = () => {
     setDropdownActive(null);
   };
 
-  useEffect(() => {
-    setArrowRotation(dropdownOpen);
-  }, [dropdownOpen]);
-
   const handleDropdownClick = (dropdown: string) => {
     if (dropdownActive === dropdown) {
       setDropdownActive(null);
+      setArrowRotation(false); // Đặt trạng thái ban đầu khi đóng dropdown
     } else {
       setDropdownActive(dropdown);
+      setArrowRotation(true); // Đặt trạng thái xoay khi mở dropdown
     }
     setMenuOpen(false); // Đóng menu khi chọn dropdown item
   };
