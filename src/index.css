@@ -814,3 +814,39 @@ input[type="number"] {
 .dropdown-active {
   color: #ff69b4;
 }
+
+.custom-link {
+  /* Các thuộc tính mặc định */
+  background-color: #EC008C;
+  /* Màu nền mặc định */
+  color: white;
+  /* Màu chữ mặc định */
+  transition: background-color 0.3s, color 0.3s;
+  /* Hiệu ứng chuyển đổi màu trong 0.3 giây */
+}
+
+.custom-link:hover {
+  /* Các thuộc tính khi hover vào */
+  background-color: white;
+  /* Màu nền khi hover vào */
+  color: #EC008C;
+  /* Màu chữ khi hover vào */
+}
+
+.custom-linkk {
+  /* Các thuộc tính mặc định */
+  background-color: white;
+  /* Màu nền mặc định */
+  color: #EC008C;
+  /* Màu chữ mặc định */
+  transition: background-color 0.3s, color 0.3s;
+  /* Hiệu ứng chuyển đổi màu trong 0.3 giây */
+}
+
+.custom-linkk:hover {
+  /* Các thuộc tính khi hover vào */
+  background-color: #EC008C;
+  /* Màu nền khi hover vào */
+  color: white;
+  /* Màu chữ khi hover vào */
+}

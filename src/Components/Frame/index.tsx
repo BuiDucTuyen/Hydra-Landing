@@ -17,7 +17,7 @@ const Frame: React.FC = () => {
               className="flex-1 px-[32px] rounded-md py-[14px] outline-none"
             />
           </div>
-          <button className="bg-[#EC008C] text-white flex justify-center items-center text-[16px] font-semibold rounded-lg w-28 h-14">
+          <button className="bg-[#EC008C] custom-link text-white flex justify-center items-center text-[16px] font-semibold rounded-lg w-28 h-14">
             <p className="hidden sm:block">{t("send")}</p>
 
             <img

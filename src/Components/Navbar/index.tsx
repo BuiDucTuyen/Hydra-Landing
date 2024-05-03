@@ -276,7 +276,10 @@ const Navbar: React.FC = () => {
   return (
     <section className="animate-fadeInDown manrope">
       <nav className="container mx-auto py-[16px] px-4 flex justify-between items-center animate-fadeInDown">
-        <img className="" src="./Img/Logo.png" alt="Logo" />
+        <a href="/">
+          <img className="" src="./Img/Logo.png" alt="Logo" />
+        </a>
+
         <div className="hidden lg:block">
           <ul className="flex text-[#270017] text-[14px] justify-between items-center gap-8">
             <Dropdown
@@ -396,10 +399,11 @@ const Navbar: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
           href="https://linktr.ee/hyperaschain"
-          className="w-32 hidden lg:block font-medium h-10 px-5 py-2 gap-2 rounded-[4px] border border-solid border-[#EC008C] text-[#EC008C] text-[14px]"
+          className="custom-link w-32 hidden lg:block font-medium h-10 px-5 py-2 gap-2 rounded-[4px] border border-solid border-[#EC008C] text-[14px]"
         >
           {t("Get")}
         </a>
+
         <div className={`lg:hidden ${menuOpen ? "hidden" : ""}`}>
           <button
             className="navbar-burger flex items-center text-white p-3"
@@ -455,7 +459,14 @@ const Navbar: React.FC = () => {
               >
                 <Space>
                   {t("explore")}
-                  <img src="../svg/direction-down 01.svg" alt="" />
+                  <DownOutlined
+                    className={`transform ${
+                      arrowRotation && dropdownActive === "explore"
+                        ? "rotate-180"
+                        : ""
+                    }`}
+                    style={{ fontSize: "14px" }}
+                  />
                 </Space>
               </Dropdown>
               <Dropdown
@@ -474,7 +485,14 @@ const Navbar: React.FC = () => {
               >
                 <Space>
                   {t("applications")}
-                  <img src="../svg/direction-down 01.svg" alt="" />
+                  <DownOutlined
+                    className={`transform ${
+                      arrowRotation && dropdownActive === "applications"
+                        ? "rotate-180"
+                        : ""
+                    }`}
+                    style={{ fontSize: "14px" }}
+                  />
                 </Space>
               </Dropdown>
               <Dropdown
@@ -493,7 +511,14 @@ const Navbar: React.FC = () => {
               >
                 <Space>
                   {t("Foundation")}
-                  <img src="../svg/direction-down 01.svg" alt="" />
+                  <DownOutlined
+                    className={`transform ${
+                      arrowRotation && dropdownActive === "foundation"
+                        ? "rotate-180"
+                        : ""
+                    }`}
+                    style={{ fontSize: "14px" }}
+                  />
                 </Space>
               </Dropdown>
               <Dropdown
@@ -512,14 +537,21 @@ const Navbar: React.FC = () => {
               >
                 <Space>
                   {t("Community")}
-                  <img src="../svg/direction-down 01.svg" alt="" />
+                  <DownOutlined
+                    className={`transform ${
+                      arrowRotation && dropdownActive === "community"
+                        ? "rotate-180"
+                        : ""
+                    }`}
+                    style={{ fontSize: "14px" }}
+                  />
                 </Space>
               </Dropdown>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://linktr.ee/hyperaschain"
-                className="w-32  font-medium h-10 px-5 py-2 gap-2 rounded-[4px] border border-solid border-[#EC008C] text-[#EC008C] text-[14px]"
+                className="w-32 custom-link  font-medium h-10 px-5 py-2 gap-2 rounded-[4px] border border-solid border-[#EC008C] text-[#EC008C] text-[14px]"
               >
                 {t("Get")}
               </a>

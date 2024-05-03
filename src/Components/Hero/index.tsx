@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
             {t("Hyperas")}
           </h2>
           <div className="lg:max-w-full flex gap-6 justify-center  xl:justify-start manrope">
-            <div className="bg-[#EC008C] flex justify-center items-center w-32 font-medium h-12 px-5 py-2 text-center rounded-[4px] border border-solid border-[#EC008C] text-white text-[14px]">
+            <div className="bg-[#EC008C] custom-link flex justify-center items-center w-32 font-medium h-12 px-5 py-2 text-center rounded-[4px] border border-solid border-[#EC008C] text-white text-[14px]">
               <a
                 href="https://linktr.ee/hyperaschain"
                 target="_blank"
@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
               </a>
             </div>
 
-            <div className="w-32 font-medium h-12 px-5 py-2 gap-2 flex justify-center items-center rounded-[4px] border border-solid border-[#EC008C] text-[#EC008C] text-[14px]">
+            <div className="w-32 custom-linkk font-medium h-12 px-5 py-2 gap-2 flex justify-center items-center rounded-[4px] border border-solid border-[#EC008C] text-[#EC008C] text-[14px]">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
