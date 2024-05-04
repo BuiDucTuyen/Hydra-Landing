@@ -14,7 +14,7 @@ const Tokennomic: React.FC = () => {
               {t("Tokenomic")}
             </h1>
           </div>
-          <div className="max-w-[450px]  text-ec-purple-700 text-center text-[16px] font-normal">
+          <div className="max-w-[450px]  text-ec-purple-700 text-left text-[16px] font-normal">
             {t("Token")}
           </div>
         </div>
