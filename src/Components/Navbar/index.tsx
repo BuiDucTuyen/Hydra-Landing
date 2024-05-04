@@ -444,7 +444,7 @@ const Navbar: React.FC = () => {
             {/* Menu Items */}
             <ul className="flex flex-col text-[#270017] text-[14px] justify-center items-center gap-7">
               <Dropdown
-                className={`text-[16px] ${
+                className={`text-[16px] font-bold ${
                   dropdownActive === "explore" ? "dropdown-active" : ""
                 }`}
                 overlay={
@@ -470,7 +470,7 @@ const Navbar: React.FC = () => {
                 </Space>
               </Dropdown>
               <Dropdown
-                className={`text-[16px] ${
+                className={`text-[16px] font-bold ${
                   dropdownActive === "applications" ? "dropdown-active" : ""
                 }`}
                 overlay={
@@ -496,7 +496,7 @@ const Navbar: React.FC = () => {
                 </Space>
               </Dropdown>
               <Dropdown
-                className={`text-[16px] ${
+                className={`text-[16px] font-bold ${
                   dropdownActive === "foundation" ? "dropdown-active" : ""
                 }`}
                 overlay={
@@ -522,7 +522,7 @@ const Navbar: React.FC = () => {
                 </Space>
               </Dropdown>
               <Dropdown
-                className={`text-[16px] ${
+                className={`text-[16px] font-bold ${
                   dropdownActive === "community" ? "dropdown-active" : ""
                 }`}
                 overlay={
