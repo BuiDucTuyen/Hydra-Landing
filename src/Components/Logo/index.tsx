@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -51,7 +50,13 @@ const Logo = () => {
                   "https://pindias.com/"
                 )}
                 {renderLogo("Armory", "../Img/Group.png", 220, 64, "/")}
-                {renderLogo("Armory", "../Img/Group (1).png", 220, 70, "/")}
+                {renderLogo(
+                  "Armory",
+                  "../Img/Group (1).png",
+                  220,
+                  70,
+                  "https://salala.io/"
+                )}
                 {renderLogo(
                   "Armory",
                   "../Img/egabid.png",
@@ -85,7 +90,13 @@ const Logo = () => {
                   "https://pindias.com/"
                 )}
                 {renderLogo("Armory", "../Img/Group.png", 220, 64, "/")}
-                {renderLogo("Armory", "../Img/Group (1).png", 220, 70, "/")}
+                {renderLogo(
+                  "Armory",
+                  "../Img/Group (1).png",
+                  220,
+                  70,
+                  "https://salala.io/"
+                )}
                 {renderLogo(
                   "Armory",
                   "../Img/egabid.png",
