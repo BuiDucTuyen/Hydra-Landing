@@ -283,7 +283,7 @@ const Navbar: React.FC = () => {
         <div className="hidden lg:block">
           <ul className="flex text-[#270017] text-[14px] justify-between items-center gap-8">
             <Dropdown
-              className={`text-[16px] ${
+              className={`text-[16px] font-bold ${
                 dropdownActive === "explore" ? "dropdown-active" : ""
               }`}
               overlay={
@@ -312,7 +312,7 @@ const Navbar: React.FC = () => {
             </Dropdown>
             {/* Dropdown Applications */}
             <Dropdown
-              className={`text-[16px] ${
+              className={`text-[16px] font-bold ${
                 dropdownActive === "applications" ? "dropdown-active" : ""
               }`}
               overlay={
@@ -330,7 +330,7 @@ const Navbar: React.FC = () => {
               <Space onClick={() => handleDropdownClick("applications")}>
                 {t("applications")}
                 <DownOutlined
-                  className={`transform ${
+                  className={`transform  ${
                     arrowRotation && dropdownActive === "applications"
                       ? "rotate-180"
                       : ""
@@ -341,7 +341,7 @@ const Navbar: React.FC = () => {
             </Dropdown>
             {/* Dropdown Foundation */}
             <Dropdown
-              className={`text-[16px] ${
+              className={`text-[16px] font-bold ${
                 dropdownActive === "foundation" ? "dropdown-active" : ""
               }`}
               overlay={
@@ -368,7 +368,7 @@ const Navbar: React.FC = () => {
             </Dropdown>
             {/* Dropdown Community */}
             <Dropdown
-              className={`text-[16px] ${
+              className={`text-[16px] font-bold ${
                 dropdownActive === "community" ? "dropdown-active" : ""
               }`}
               overlay={

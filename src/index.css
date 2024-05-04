@@ -809,6 +809,7 @@ input[type="number"] {
 
 .ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item-active {
   background-color: #F2EBEF !important;
+  font-weight: bold;
 }
 
 .dropdown-active {
