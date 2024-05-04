@@ -98,7 +98,9 @@
   animation: marqueeScroll 50s linear infinite;
   animation-play-state: running;
 }
-
+.paused .run {
+  animation-play-state: paused;
+}
 @keyframes bounce {
 
   0%,
@@ -113,7 +115,7 @@
 
 .animate-bounce {
   animation: bounce 5s ease-in-out infinite;
-  /* Điều chỉnh thời gian của animation */
+
 }
 .menu-show {
   transform: translateY(100%);

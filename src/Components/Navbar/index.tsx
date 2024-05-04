@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Dropdown, Space, Menu } from "antd";
 import { useTranslation } from "react-i18next";
 import { DownOutlined } from "@ant-design/icons";
